@@ -1,0 +1,451 @@
+﻿@font-face {
+	font-family: "Harmonia Sans Pro Cyr";
+	src: url("../fonts/HarmoniaSansProCyr-Regular.otf") format("opentype");
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+input {
+	&:focus {
+		outline: none;
+	}
+}
+select {
+	&:focus {
+		outline: none;
+	}
+}
+textarea {
+	&:focus {
+		outline: none;
+	}
+}
+button {
+	&:focus {
+		outline: none;
+	}
+}
+.social_li {
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 20px;
+	cursor: pointer;
+}
+.info_li {
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 30px;
+	cursor: pointer;
+}
+.arrivalsProducts_div {
+	height: 365px;
+	width: 270px;
+	background-color: #ffffff;
+	float: left;
+}
+.mainSpace {
+	margin: 0 auto;
+	max-width: 1172px;
+}
+header {
+	.infoSocial {
+		height: 60px;
+	}
+	hr {
+		background-color: #f1f2f4;
+		height: 1px;
+		margin-top: 0px;
+		width: 100%;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	.clearFix {
+		float: none;
+		clear: both;
+	}
+	.info.left {
+		margin-top: 20px;
+		li {
+			display: inline-block;
+		}
+		.li-email {
+			background-image: url('../images/Mail.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0px 0px 0px 30px;
+			cursor: pointer;
+		}
+		.li-phone {
+			background-image: url('../images/phone.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0px 0px 0px 30px;
+			cursor: pointer;
+		}
+	}
+	.svg {
+		display: block;
+	}
+	.social.right {
+		margin-top: 20px;
+		li {
+			display: inline-block;
+			padding: 5px;
+		}
+		.li-facebook {
+			background-image: url('../images/facebook.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0px 0px 0px 20px;
+			cursor: pointer;
+		}
+		.li-twitter {
+			background-image: url('../images/twitter.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0px 0px 0px 20px;
+			cursor: pointer;
+		}
+		.li-google {
+			background-image: url('../images/google.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0px 0px 0px 20px;
+			cursor: pointer;
+		}
+		.li-instagram {
+			background-image: url('../images/instegram.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0px 0px 0px 20px;
+			cursor: pointer;
+		}
+	}
+	.logoProfileCart {
+		height: 120px;
+		display: inline;
+		width: 100%;
+		li {
+			display: inline-block;
+			cursor: pointer;
+		}
+		.navigation {
+			float: left;
+			padding: 55px 0px 0px 85px;
+			font-family: Harmonia Sans Pro Cyr;
+			li {
+				margin-right: 45px;
+				&:first-child {
+					color: #ff7c31;
+				}
+			}
+		}
+		.profile {
+			float: left;
+			padding: 55px 0px 0px 235px;
+			position: relative;
+			li {
+				margin-left: 27px;
+			}
+			.cartAmount {
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				background-color: #43515E;
+				border-radius: 7px;
+				text-align: center;
+				font-size: 10px;
+				color: #D0D3D7;
+				padding-top: 1px;
+				bottom: 22px;
+				right: 2px;
+			}
+		}
+		.logo {
+			float: left;
+			img {
+				margin-left: -35px;
+			}
+		}
+	}
+}
+.banner {
+	position: relative;
+	width: 100%;
+	height: 615px;
+	.productInfoBannerUp {
+		background-image: url("../images/banner-bg-1.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		position: absolute;
+		height: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.productInfoBannerDown {
+		width: 100%;
+		position: absolute;
+		height: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.productInfoBanner {
+		position: absolute;
+		top: 228px;
+		left: 263px;
+		width: 620px;
+		.scroll {
+			float: left;
+			margin-top: 55px;
+			li {
+				cursor: pointer;
+				list-style-type: none;
+			}
+			.sliderUp {
+				height: 20px;
+				width: 10px;
+				background-color: #ffffff;
+				display: block;
+			}
+			.sliderCurrentUp {
+				height: 20px;
+				width: 10px;
+				background-color: #ffffff;
+				display: block;
+				margin-top: 8px;
+				background-color: #ff7c31;
+			}
+			.sliderCurrentDown {
+				height: 20px;
+				width: 10px;
+				background-color: #ffffff;
+				display: block;
+				margin-top: 2px;
+				background-color: #ff7c31;
+			}
+			.sliderDown {
+				height: 20px;
+				width: 10px;
+				background-color: #ffffff;
+				display: block;
+				margin-top: 8px;
+			}
+		}
+		.productInfoBannerDesc {
+			max-width: 400px;
+			margin: 0px 0px 0px 90px;
+			h1 {
+				font-family: Harmonia Sans Pro Cyr;
+				font-size: 35px;
+				text-transform: uppercase;
+				font-weight: bolder;
+				color: #ff7c31;
+			}
+			p {
+				margin-top: 30px;
+				font-family: Harmonia Sans Pro Cyr;
+				font-size: 15px;
+			}
+			~ p{
+				p {
+					color: #5a6775;
+				}
+			}
+			ul {
+				margin-top: 75px;
+			}
+			li {
+				display: inline-block;
+				font-family: Harmonia Sans Pro Cyr;
+				font-size: 15px;
+			}
+		}
+	}
+}
+.arrivals {
+	background-color: #F4F5F8;
+	margin: 0;
+	padding: 125px 0px 0px 0px;
+	.mainSpace {
+		.arrivalsHeader {
+			font-family: Harmonia Sans Pro Cyr;
+			text-align: center;
+			font-size: 25px;
+			font-weight: bolder;
+			text-transform: uppercase;
+			.arrivalsHeaderFirstWord {
+				color: #ff7c31;
+			}
+		}
+		.arrivalsDescription {
+			display: block;
+			font-family: Harmonia Sans Pro Cyr;
+			text-align: center;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+		ul {
+			margin-top: 85px;
+			li {
+				display: inline-block;
+				&:nth-child(n+2) {
+					padding-left: 25px;
+				}
+				&:nth-child(-n+2) {
+					div {
+						img {
+							margin: 30px 0px 30px 65px;
+						}
+					}
+					.arrivalsProductsName {
+						display: block;
+						text-align: center;
+						padding-bottom: 35px;
+						font-family: Harmonia Sans Pro Cyr;
+						font-size: 15px;
+						font-weight: bold;
+						color: #37414d;
+					}
+					.arrivalsProductsPrice {
+						display: block;
+						text-align: center;
+						font-family: Harmonia Sans Pro Cyr;
+						font-size: 15px;
+						font-weight: bold;
+						color: #ff3c00;
+					}
+				}
+				&:last-child {
+					div {
+						img {
+							margin: 30px 0px 30px 65px;
+						}
+					}
+					.arrivalsProductsName {
+						display: block;
+						text-align: center;
+						padding-bottom: 35px;
+						font-family: Harmonia Sans Pro Cyr;
+						font-size: 15px;
+						font-weight: bold;
+						color: #37414d;
+					}
+					.arrivalsProductsPrice {
+						display: block;
+						text-align: center;
+						font-family: Harmonia Sans Pro Cyr;
+						font-size: 15px;
+						font-weight: bold;
+						color: #ff3c00;
+					}
+				}
+				&:nth-child(3) {
+					div {
+						img {
+							margin: 40px 0px 35px 100px;
+						}
+					}
+					.arrivalsProductsName {
+						display: block;
+						text-align: center;
+						padding-bottom: 30px;
+						font-family: Harmonia Sans Pro Cyr;
+						font-size: 15px;
+						font-weight: bold;
+						color: #ff3c00;
+					}
+				}
+			}
+		}
+		.arrivalsProducts {
+			height: 365px;
+			width: 270px;
+			background-color: #ffffff;
+			float: left;
+			hr {
+				background-color: #f1f2f4;
+				height: 1px;
+				width: 170px;
+			}
+			.arrivalsProductsAdditionalInfo {
+				width: 170px;
+				height: 140px;
+				margin: 0 auto;
+				.arrivalsProductsSizes {
+					display: block;
+					text-align: center;
+					font-size: 12px;
+				}
+				.arrivalsProductsColors {
+					ul {
+						width: 75px;
+						margin-left: auto;
+						margin-right: auto;
+						margin-top:30px;
+						li {
+							display: inline-block;
+							width: 15px;
+							height: 15px;
+							border-radius: 7px;
+							padding-left: 0px;
+						}
+						.redli {
+							background-color: #ff3c00;
+						}
+						.blackli {
+							background-color: #37414c;
+						}
+						.blueli {
+							background-color: #38a2fd;
+						}
+						.yellowli {
+							background-color: #00ed65;
+						}
+					}
+					padding: 0px 0px 30px 0px;
+					border-bottom-width:1px;
+					border-bottom-color:#F2F3F7;
+					border-bottom-style: solid;
+					width: 100%;
+				}
+				.arrivalsProductsFooter{
+					width: 100%;
+					ul{
+						width: 125px;
+						margin-left: auto;
+						margin-right: auto;
+						margin-top: 25px;
+						li {
+							display: inline-block;
+							&:nth-child(3) {
+								padding-left: 34px;
+							}
+							&:nth-child(2) {
+								padding-left: 34px;
+							}
+							img{
+								margin: 0 auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
