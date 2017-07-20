@@ -1,0 +1,510 @@
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr";
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf") format("opentype");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\000035}}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000313}}
+input:focus {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000318}}
+select:focus {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000323}}
+textarea:focus {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000328}}
+button:focus {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000332}}
+.social_li {
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000338}}
+.info_li {
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000344}}
+.arrivalsProducts_div {
+  height: 365px;
+  width: 270px;
+  background-color: #ffffff;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000350}}
+.mainSpace {
+  margin: 0 auto;
+  max-width: 1172px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000355}}
+header .infoSocial {
+  height: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000358}}
+header hr {
+  background-color: #f1f2f4;
+  height: 1px;
+  margin-top: 0px;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000364}}
+header .left {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000367}}
+header .right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000370}}
+header .clearFix {
+  float: none;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000374}}
+header .info.left {
+  margin-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000376}}
+header .info.left li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000379}}
+header .info.left .li-email {
+  background-image: url('../images/Mail.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000386}}
+header .info.left .li-phone {
+  background-image: url('../images/phone.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000394}}
+header .svg {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000397}}
+header .social.right {
+  margin-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\0000399}}
+header .social.right li {
+  display: inline-block;
+  padding: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003103}}
+header .social.right .li-facebook {
+  background-image: url('../images/facebook.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003110}}
+header .social.right .li-twitter {
+  background-image: url('../images/twitter.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003117}}
+header .social.right .li-google {
+  background-image: url('../images/google.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003124}}
+header .social.right .li-instagram {
+  background-image: url('../images/instegram.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003132}}
+header .logoProfileCart {
+  height: 120px;
+  display: inline;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003136}}
+header .logoProfileCart li {
+  display: inline-block;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003140}}
+header .logoProfileCart .navigation {
+  float: left;
+  padding: 55px 0px 0px 85px;
+  font-family: Harmonia Sans Pro Cyr;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003144}}
+header .logoProfileCart .navigation li {
+  margin-right: 45px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003146}}
+header .logoProfileCart .navigation li:first-child {
+  color: #ff7c31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003151}}
+header .logoProfileCart .profile {
+  float: left;
+  padding: 55px 0px 0px 235px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003155}}
+header .logoProfileCart .profile li {
+  margin-left: 27px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003158}}
+header .logoProfileCart .profile .cartAmount {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #43515E;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 10px;
+  color: #D0D3D7;
+  padding-top: 1px;
+  bottom: 22px;
+  right: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003172}}
+header .logoProfileCart .logo {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003174}}
+header .logoProfileCart .logo img {
+  margin-left: -35px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003180}}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 615px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003184}}
+.banner .productInfoBannerUp {
+  background-image: url("../images/banner-bg-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003193}}
+.banner .productInfoBannerUp img {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003198}}
+.banner .productInfoBannerDown {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003203}}
+.banner .productInfoBannerDown img {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003208}}
+.banner .productInfoBanner {
+  position: absolute;
+  top: 228px;
+  left: 263px;
+  width: 620px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003213}}
+.banner .productInfoBanner .scroll {
+  float: left;
+  margin-top: 55px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003216}}
+.banner .productInfoBanner .scroll li {
+  cursor: pointer;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003220}}
+.banner .productInfoBanner .scroll .sliderUp {
+  height: 20px;
+  width: 10px;
+  background-color: #ffffff;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003226}}
+.banner .productInfoBanner .scroll .sliderCurrentUp {
+  height: 20px;
+  width: 10px;
+  background-color: #ffffff;
+  display: block;
+  margin-top: 8px;
+  background-color: #ff7c31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003234}}
+.banner .productInfoBanner .scroll .sliderCurrentDown {
+  height: 20px;
+  width: 10px;
+  background-color: #ffffff;
+  display: block;
+  margin-top: 2px;
+  background-color: #ff7c31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003242}}
+.banner .productInfoBanner .scroll .sliderDown {
+  height: 20px;
+  width: 10px;
+  background-color: #ffffff;
+  display: block;
+  margin-top: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003250}}
+.banner .productInfoBanner .productInfoBannerDesc {
+  max-width: 400px;
+  margin: 0px 0px 0px 90px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003253}}
+.banner .productInfoBanner .productInfoBannerDesc h1 {
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #ff7c31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003260}}
+.banner .productInfoBanner .productInfoBannerDesc p {
+  margin-top: 30px;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003266}}
+.banner .productInfoBanner .productInfoBannerDesc ~ p p {
+  color: #5a6775;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003270}}
+.banner .productInfoBanner .productInfoBannerDesc ul {
+  margin-top: 75px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003273}}
+.banner .productInfoBanner .productInfoBannerDesc li {
+  display: inline-block;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003281}}
+.arrivals {
+  background-color: #F4F5F8;
+  margin: 0;
+  padding: 125px 0px 0px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003286}}
+.arrivals .mainSpace .arrivalsHeader {
+  font-family: Harmonia Sans Pro Cyr;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003292}}
+.arrivals .mainSpace .arrivalsHeader .arrivalsHeaderFirstWord {
+  color: #ff7c31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003296}}
+.arrivals .mainSpace .arrivalsDescription {
+  display: block;
+  font-family: Harmonia Sans Pro Cyr;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003303}}
+.arrivals .mainSpace ul {
+  margin-top: 85px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003305}}
+.arrivals .mainSpace ul li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003307}}
+.arrivals .mainSpace ul li:nth-child(n+2) {
+  padding-left: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003312}}
+.arrivals .mainSpace ul li:nth-child(-n+2) div img {
+  margin: 30px 0px 30px 65px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003316}}
+.arrivals .mainSpace ul li:nth-child(-n+2) .arrivalsProductsName {
+  display: block;
+  text-align: center;
+  padding-bottom: 35px;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+  font-weight: bold;
+  color: #37414d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003325}}
+.arrivals .mainSpace ul li:nth-child(-n+2) .arrivalsProductsPrice {
+  display: block;
+  text-align: center;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff3c00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003336}}
+.arrivals .mainSpace ul li:last-child div img {
+  margin: 30px 0px 30px 65px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003340}}
+.arrivals .mainSpace ul li:last-child .arrivalsProductsName {
+  display: block;
+  text-align: center;
+  padding-bottom: 35px;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+  font-weight: bold;
+  color: #37414d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003349}}
+.arrivals .mainSpace ul li:last-child .arrivalsProductsPrice {
+  display: block;
+  text-align: center;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff3c00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003360}}
+.arrivals .mainSpace ul li:nth-child(3) div img {
+  margin: 40px 0px 35px 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003364}}
+.arrivals .mainSpace ul li:nth-child(3) .arrivalsProductsName {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: Harmonia Sans Pro Cyr;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff3c00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003376}}
+.arrivals .mainSpace .arrivalsProducts {
+  height: 365px;
+  width: 270px;
+  background-color: #ffffff;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003381}}
+.arrivals .mainSpace .arrivalsProducts hr {
+  background-color: #f1f2f4;
+  height: 1px;
+  width: 170px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003386}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo {
+  width: 170px;
+  height: 140px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003390}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsSizes {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003395}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors {
+  padding: 0px 0px 30px 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #F2F3F7;
+  border-bottom-style: solid;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003396}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors ul {
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003401}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors ul li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  padding-left: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003408}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors ul .redli {
+  background-color: #ff3c00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003411}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors ul .blackli {
+  background-color: #37414c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003414}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors ul .blueli {
+  background-color: #38a2fd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003417}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsColors ul .yellowli {
+  background-color: #00ed65;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003427}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsFooter {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003429}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsFooter ul {
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003434}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsFooter ul li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003436}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsFooter ul li:nth-child(3) {
+  padding-left: 34px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003439}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsFooter ul li:nth-child(2) {
+  padding-left: 34px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/windows\/Projects\/home_frontend\/style\/main\.less}line{font-family:\00003442}}
+.arrivals .mainSpace .arrivalsProducts .arrivalsProductsAdditionalInfo .arrivalsProductsFooter ul li img {
+  margin: 0 auto;
+}
