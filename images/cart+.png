@@ -1,0 +1,2173 @@
+pid: 5629, tid: 5677, pkg name: com.supercell.clashofclans
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'samsung/kltexx/klte:4.4.2/KOT49H/G900FXXU1ANCE:user/release-keys'
+Revision: '0'
+pid: 5629, tid: 5677, name: Thread-94  >>> com.supercell.clashofclans <<<
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000123
+    eax 00000000  ebx 8aeb3e18  ecx 5400e153  edx 5400e153
+    esi 8aea96c3  edi ffffffff
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip 8ae9fc2b  ebp 8935280c  esp 893527d0  flags 00210246
+
+backtrace:
+    #00  pc 00018c2b  /system/lib/libpga.so (PgaSocketRecvPgaIpc(PgaSocket*, int, char**)+619)
+    #01  pc 00015811  /system/lib/libpga.so (PgaSocketRecvCopy+305)
+    #02  pc 0001b4ff  /system/lib/libpga.so (ctlSwapBuffers+479)
+    #03  pc 0000f01a  /system/lib/egl/libGLES_bst.so (eglSwapBuffers+282)
+    #04  pc 00014d72  /system/lib/libEGL.so (eglSwapBuffers+306)
+    #05  pc 00066212  /system/lib/libandroid_runtime.so
+    #06  pc 0002a57b  /system/lib/libdvm.so (dvmPlatformInvoke+79)
+    #07  pc 0003902f  [heap]
+    #08  pc 00086dc2  /system/lib/libdvm.so (dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*)+434)
+    #09  pc 00178238  /system/lib/libdvm.so
+    #10  pc 00005f27  <unknown>
+    #11  pc 0003ba32  /system/lib/libdvm.so (dvmMterpStd(Thread*)+66)
+    #12  pc 000370f9  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+217)
+    #13  pc 000bd0d8  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, char*)+792)
+    #14  pc 000bd4e7  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+55)
+    #15  pc 00099453  /system/lib/libdvm.so
+    #16  pc 0000bd9c  /system/lib/libc.so (__thread_entry+236)
+    #17  pc 0003e465  /system/lib/libc.so (__pthread_clone+69)
+    #18  pc 0009906f  /system/lib/libdvm.so
+
+stack:
+         89352790  b7627dd6  /system/lib/libc.so (__set_errno+6)
+         89352794  00000035  
+         89352798  b764b735  /system/lib/libc.so (__ioctl+37)
+         8935279c  00000016  
+         893527a0  00000004  
+         893527a4  00000000  
+         893527a8  b76abfcc  /system/lib/libc.so
+         893527ac  5400e153  
+         893527b0  00000035  
+         893527b4  40047003  
+         893527b8  8935280c  [stack:5677]
+         893527bc  8aeb3e18  /system/lib/libpga.so
+         893527c0  8aea96c3  /system/lib/libpga.so
+         893527c4  ffffffff  
+         893527c8  8935280c  [stack:5677]
+         893527cc  8ae9fc2b  /system/lib/libpga.so (PgaSocketRecvPgaIpc(PgaSocket*, int, char**)+619)
+    #00  893527d0  00000001  
+         893527d4  8aea96c3  /system/lib/libpga.so
+         893527d8  8aead81c  /system/lib/libpga.so
+         893527dc  0000162d  
+         893527e0  ffffffff  
+         893527e4  ffffffff  
+         893527e8  00000016  
+         893527ec  893529fc  [stack:5677]
+         893527f0  1a217560  [stack:5658]
+         893527f4  00000004  
+         893527f8  89253f00  
+         893527fc  00000000  
+         89352800  00000000  
+         89352804  00000000  
+         89352808  8ae9f5e9  /system/lib/libpga.so (PgaSocketAllocPgaIpc(PgaSocket*, int)+9)
+         8935280c  ffffffff  
+         ........  ........
+    #01  89352830  b7b84264  [heap]
+         89352834  00000004  
+         89352838  89352878  [stack:5677]
+         8935283c  00000000  
+         89352840  00000000  
+         89352844  89253f00  
+         89352848  00000000  
+         8935284c  00000000  
+         89352850  00000000  
+         89352854  00000100  
+         89352858  00000000  
+         8935285c  00000000  
+         89352860  00000000  
+         89352864  00000000  
+         89352868  00000000  
+         8935286c  00000000  
+         ........  ........
+    #02  893528d0  b7b84264  [heap]
+         893528d4  8935290c  [stack:5677]
+         893528d8  00000004  
+         893528dc  00000000  
+         893528e0  00000000  
+         893528e4  00000000  
+         893528e8  00000000  
+         893528ec  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         893528f0  100ef068  
+         893528f4  00000000  
+         893528f8  00000000  
+         893528fc  b75d5ec1  /system/lib/libutils.so (android::SortedVectorImpl::indexOf(void const*) const+97)
+         89352900  00000000  
+         89352904  b9f6e95c  [heap]
+         89352908  89352964  [stack:5677]
+         8935290c  00000000  
+         ........  ........
+    #03  89352930  100ef068  
+         89352934  00000000  
+         89352938  00000000  
+         8935293c  b7194b90  /system/lib/libEGL.so
+         89352940  b7223df4  /system/lib/libEGL.so
+         89352944  b7223df4  /system/lib/libEGL.so
+         89352948  893529a8  [stack:5677]
+         8935294c  b7223df4  /system/lib/libEGL.so
+         89352950  b7b93d60  [heap]
+         89352954  00000000  
+         89352958  00000001  
+         8935295c  b7197f7e  /system/lib/libEGL.so
+         89352960  0000000b  
+         89352964  b7b93d60  [heap]
+         89352968  b7223df4  /system/lib/libEGL.so
+         8935296c  b7223df4  /system/lib/libEGL.so
+         ........  ........
+    #04  89352980  8af7b870  /system/lib/egl/libGLES_bst.so
+         89352984  ba847b80  [heap]
+         89352988  00000001  
+         8935298c  b4d0ae02  /system/lib/libdvm.so
+         89352990  b7bbc9c0  [heap]
+         89352994  00000007  
+         89352998  000280f0  
+         8935299c  b76abfcc  /system/lib/libc.so
+         893529a0  89f29f24  
+         893529a4  89352a20  [stack:5677]
+         893529a8  b7229040  /system/lib/libEGL.so
+         893529ac  b7670845  /system/lib/libc.so (gettimeofday+37)
+         893529b0  893529f8  [stack:5677]
+         893529b4  00000000  
+         893529b8  89352a38  [stack:5677]
+         893529bc  b75343ec  /system/lib/libandroid_runtime.so
+         ........  ........
+    #05  893529d0  00000001  
+         893529d4  b7b93d60  [heap]
+         893529d8  93066358  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         893529dc  b7bbc9d0  [heap]
+         893529e0  00000002  
+         893529e4  893529fc  [stack:5677]
+         893529e8  5708e52d  
+         893529ec  70000003  
+         893529f0  89f29f38  
+         893529f4  89352a14  [stack:5677]
+         893529f8  89352a38  [stack:5677]
+         893529fc  b4cb557c  /system/lib/libdvm.so (dvmPlatformInvoke+80)
+    #06  89352a00  b7b9f030  [heap]
+         ........  ........
+         ........  ........
+    #08  89352a40  b7b9f030  [heap]
+         89352a44  00000000  
+         89352a48  70000003  
+         89352a4c  00000003  
+         89352a50  89f29f28  
+         89352a54  91c35798  /data/dalvik-cache/system@framework@framework2.jar@classes.dex
+         89352a58  b74571a0  /system/lib/libandroid_runtime.so
+         89352a5c  b7bbc9d0  [heap]
+         89352a60  91cc2000  /dev/ashmem/dalvik-aux-structure (deleted)
+         89352a64  b7bbc9c0  [heap]
+         89352a68  89f29f28  
+         89352a6c  b7bbc9d0  [heap]
+         89352a70  9ce9f5a8  /dev/ashmem/dalvik-heap (deleted)
+         89352a74  00000000  
+         89352a78  000dc9c0  
+         89352a7c  92e169d0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         ........  ........
+    #09  89352aa0  89f29f28  
+         ........  ........
+         ........  ........
+    #11  89352b20  b7bbc9c0  [heap]
+         89352b24  00000000  
+         89352b28  00000000  
+         89352b2c  00000000  
+         89352b30  00000000  
+         89352b34  00000000  
+         89352b38  00000000  
+         89352b3c  00000000  
+         89352b40  00000000  
+         89352b44  00000000  
+         89352b48  00000000  
+         89352b4c  00000000  
+         89352b50  00000000  
+         89352b54  b4e52cac  /system/lib/libdvm.so
+         89352b58  b7bbc9c0  [heap]
+         89352b5c  b4cc20fa  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+218)
+    #12  89352b60  b7bbc9c0  [heap]
+         89352b64  00000000  
+         89352b68  00000000  
+         89352b6c  00000000  
+         89352b70  00000000  
+         89352b74  00000000  
+         89352b78  00000000  
+         89352b7c  00000000  
+         89352b80  00000000  
+         89352b84  00000000  
+         89352b88  00000000  
+         89352b8c  00000000  
+         89352b90  00000000  
+         89352b94  00000000  
+         89352b98  00000000  
+         89352b9c  00000000  
+         ........  ........
+    #13  89352c20  b7bbc9c0  [heap]
+         89352c24  930dbad0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         89352c28  89352d14  [stack:5677]
+         89352c2c  b76abfcc  /system/lib/libc.so
+         89352c30  b7bb0078  [heap]
+         89352c34  b7bafff0  [heap]
+         89352c38  b7baffe8  [heap]
+         89352c3c  b7621eaf  /system/lib/libc.so (dlmalloc+351)
+         89352c40  b76b0820  
+         89352c44  00000000  
+         89352c48  00000000  
+         89352c4c  b76abfcc  /system/lib/libc.so
+         89352c50  b7bbc9c0  [heap]
+         89352c54  b764da25  /system/lib/libc.so (memset+37)
+         89352c58  b76abfcc  /system/lib/libc.so
+         89352c5c  b7bbc9c0  [heap]
+         ........  ........
+    #14  89352ca0  b7bbc9c0  [heap]
+         89352ca4  930dbad0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         89352ca8  9cf5ec48  /dev/ashmem/dalvik-heap (deleted)
+         89352cac  00000000  
+         89352cb0  89352d14  [stack:5677]
+         89352cb4  89352ce0  [stack:5677]
+         89352cb8  b761d8b9  /system/lib/libc.so (pthread_cond_wait+9)
+         89352cbc  b4e52cac  /system/lib/libdvm.so
+         89352cc0  b7bbc9c0  [heap]
+         89352cc4  b4ec6c80  
+         89352cc8  b4ec6f8c  
+         89352ccc  b4d24454  /system/lib/libdvm.so
+    #15  89352cd0  b7bbc9c0  [heap]
+         89352cd4  930dbad0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         89352cd8  9cf5ec48  /dev/ashmem/dalvik-heap (deleted)
+         89352cdc  89352d14  [stack:5677]
+         89352ce0  00000000  
+         89352ce4  00000000  
+         89352ce8  00000000  
+         89352cec  00000000  
+         89352cf0  00000000  
+         89352cf4  00000000  
+         89352cf8  00000000  
+         89352cfc  00000000  
+         89352d00  00000000  
+         89352d04  89352d44  [stack:5677]
+         89352d08  00000000  
+         89352d0c  89352d2c  [stack:5677]
+         ........  ........
+    #16  89352d80  b7bbc9c0  [heap]
+         89352d84  00000000  
+         89352d88  00000003  
+         89352d8c  00000022  
+         89352d90  00000000  
+         89352d94  00000000  
+         89352d98  00000000  
+         89352d9c  00000000  
+         89352da0  00000000  
+         89352da4  89f24000  
+         89352da8  00000000  
+         89352dac  00002000  
+         89352db0  00050f00  
+         89352db4  89352dd0  [stack:5677]
+         89352db8  89255000  
+         89352dbc  b764d466  /system/lib/libc.so (__pthread_clone+70)
+    #17  89352dc0  b4d24070  /system/lib/libdvm.so
+    #18  89352dc4  b7bbc9c0  [heap]
+         89352dc8  89352dd0  [stack:5677]
+         89352dcc  00000000  
+         89352dd0  89352dd0  [stack:5677]
+         89352dd4  b7bbce30  [heap]
+         89352dd8  00000016  
+         89352ddc  b722a994  
+         89352de0  00000000  
+         89352de4  5400e153  
+         89352de8  00000000  
+         89352dec  00000000  
+         89352df0  00000000  
+         89352df4  00000000  
+         89352df8  00000000  
+         89352dfc  00000000  
+         89352e00  00000000  
+         ........  ........
+--------- tail end of log /dev/log/system
+07-18 01:08:45.594  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 01:08:50.064  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 21:32:59.282  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 21:36:51.352  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 21:49:16.962  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+--------- tail end of log /dev/log/main
+07-18 21:36:54.262  5629  5633 D dalvikvm: GC_CONCURRENT freed 1254K, 29% free 3393K/4728K, paused 4ms+1ms, total 18ms
+07-18 21:47:13.762  5629  5633 D dalvikvm: GC_CONCURRENT freed 478K, 21% free 3752K/4724K, paused 2ms+0ms, total 12ms
+07-18 21:49:47.432  5629  5677 E PGA     : PgaSocketRecvPgaIpc: 367: ioctl() failed: ret -1, errno 22
+07-18 21:49:47.432  5629  5677 E PGA     : [5677] Connection closed by host (err = -1), possibly due to exception: App cannot continue with current context. Exiting.
+07-18 21:49:47.432  5629  5677 F libc    : Fatal signal 11 (SIGSEGV) at 0x00000123 (code=1), thread 5677 (Thread-94)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5629, name: ll.clashofclans
+    eax fffffffc  ebx 00000026  ecx bf85410c  edx 00000010
+    esi ffffffff  edi b7b5a284
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d21b  ebp b7b5a270  esp bf85409c  flags 00210246
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+    #01  pc fffffffe  <unknown>
+    #02  pc 0004d46f  [heap]
+    #03  pc 0001e0ff  /system/lib/libutils.so
+    #04  pc 00012e8f  /system/lib/libutils.so
+    #05  pc 00012e9f  /system/lib/libutils.so
+    #06  pc 00012eaf  /system/lib/libutils.so
+    #07  pc 00012ebf  /system/lib/libutils.so
+    #08  pc ffffffff  <unknown>
+    #09  pc 0084708f  /system/usr/icu/icudt51l.dat
+
+stack:
+         bf85405c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         bf854060  00000000  
+         bf854064  00000000  
+         bf854068  00000000  
+         bf85406c  bbf23a60  [heap]
+         bf854070  b9f5db10  [heap]
+         bf854074  00000000  
+         bf854078  0100cec9  
+         bf85407c  b75e3e74  /system/lib/libutils.so
+         bf854080  b7b5a270  [heap]
+         bf854084  b7b5a284  [heap]
+         bf854088  b7b5a270  [heap]
+         bf85408c  b75d5b7f  /system/lib/libutils.so (android::VectorImpl::clear()+31)
+         bf854090  b7b5a2b8  [heap]
+         bf854094  00000000  
+         bf854098  00000000  
+    #00  bf85409c  ffffffff  
+         ........  ........
+         ........  ........
+    #03  b75e3b50  b75cce90  /system/lib/libutils.so (android::RefBase::onFirstRef())
+    #04  b75e3b54  b75ccea0  /system/lib/libutils.so (android::RefBase::onLastStrongRef(void const*))
+         b75e3b58  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+         b75e3b5c  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+         b75e3b60  00000004  
+         b75e3b64  00000000  
+         b75e3b68  00000000  
+         b75e3b6c  b75d6fe0  /system/lib/libutils.so (android::MessageHandler::~MessageHandler())
+         b75e3b70  b75d7440  /system/lib/libutils.so (android::MessageHandler::~MessageHandler())
+         b75e3b74  b760bb10  /system/lib/libstdc++.so (__cxa_pure_virtual)
+         b75e3b78  00000000  
+         b75e3b7c  00000000  
+         b75e3b80  00000000  
+         b75e3b84  00000000  
+         b75e3b88  fffffffc  
+         b75e3b8c  fffffffc  
+         b75e3b90  00000000  
+         ........  ........
+    #05  b75e3ba4  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+    #06  b75e3ba8  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+    #07  b75e3bac  00000000  
+         b75e3bb0  00000000  
+         b75e3bb4  00000000  
+         b75e3bb8  00000000  
+         b75e3bbc  00000000  
+         b75e3bc0  00000004  
+         b75e3bc4  00000000  
+         b75e3bc8  00000000  
+         b75e3bcc  b75d6f90  /system/lib/libutils.so (android::LooperCallback::~LooperCallback())
+         b75e3bd0  b75d74a0  /system/lib/libutils.so (android::LooperCallback::~LooperCallback())
+         b75e3bd4  b760bb10  /system/lib/libstdc++.so (__cxa_pure_virtual)
+         b75e3bd8  00000000  
+         b75e3bdc  00000000  
+         b75e3be0  00000000  
+         b75e3be4  00000000  
+         b75e3be8  fffffffc  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5633, name: GC
+    eax fffffe00  ebx b79e5684  ecx 00000080  edx fffffe94
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764d569  ebp b79e5684  esp 8ffc3c54  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 0000867f  [heap]
+
+stack:
+         8ffc3c14  8ffc3c38  [stack:5633]
+         8ffc3c18  00000000  
+         8ffc3c1c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8ffc3c20  9d105000  /dev/ashmem/dalvik-heap (deleted)
+         8ffc3c24  b76b0824  
+         8ffc3c28  b76b0660  
+         8ffc3c2c  b4d7c494  /system/lib/libdvm.so (dvmHeapSourceMorecore(void*, int)+228)
+         8ffc3c30  00000000  
+         8ffc3c34  bc03adc8  [heap]
+         8ffc3c38  b4e52cac  /system/lib/libdvm.so
+         8ffc3c3c  b4d7c131  /system/lib/libdvm.so
+         8ffc3c40  bbfe5000  [heap]
+         8ffc3c44  0001c000  
+         8ffc3c48  00000004  
+         8ffc3c4c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8ffc3c50  bc03adc8  [heap]
+    #00  8ffc3c54  b79e5680  [heap]
+         8ffc3c58  b76abfcc  /system/lib/libc.so
+         8ffc3c5c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8ffc3c60  b79e5684  [heap]
+         8ffc3c64  00000080  
+         8ffc3c68  fffffe94  
+         8ffc3c6c  00000000  
+         8ffc3c70  9cc6a008  /dev/ashmem/dalvik-zygote (deleted)
+         8ffc3c74  b4e52cac  /system/lib/libdvm.so
+         8ffc3c78  00000000  
+         8ffc3c7c  b4e52cac  /system/lib/libdvm.so
+         8ffc3c80  b79e5610  [heap]
+         8ffc3c84  00000002  
+         8ffc3c88  fffffe94  
+         8ffc3c8c  b4cbea63  /system/lib/libdvm.so (dvmUnlockHeap()+35)
+         8ffc3c90  b4ec6ffc  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5634, name: Signal Catcher
+    eax fffffffc  ebx 8febfc98  ecx 00000000  edx 00000000
+    esi 00000008  edi 8febfcec
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764c96b  ebp b7b58b90  esp 8febfc6c  flags 00210286
+
+backtrace:
+    #00  pc 0003d96b  /system/lib/libc.so (__rt_sigtimedwait+27)
+    #01  pc 000fcc97  [stack:5634]
+
+stack:
+         8febfc2c  b7b58b90  [heap]
+         8febfc30  00000000  
+         8febfc34  b7b58efc  [heap]
+         8febfc38  9ce9d7d0  /dev/ashmem/dalvik-heap (deleted)
+         8febfc3c  b4d1c031  /system/lib/libdvm.so (dvmRemoveFromReferenceTable(ReferenceTable*, Object**, Object*)+33)
+         8febfc40  b79ec5b0  [heap]
+         8febfc44  b79ec5b4  [heap]
+         8febfc48  00000004  
+         8febfc4c  b4005a00  /dev/ashmem/dalvik-heap (deleted)
+         8febfc50  92d68658  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         8febfc54  00000009  
+         8febfc58  b4d47dc9  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, char*)+9)
+         8febfc5c  b4d22c39  /system/lib/libdvm.so (dvmChangeStatus(Thread*, ThreadStatus)+25)
+         8febfc60  b7b58b90  [heap]
+         8febfc64  9ce1add8  /dev/ashmem/dalvik-heap (deleted)
+         8febfc68  9ce9d7d0  /dev/ashmem/dalvik-heap (deleted)
+    #00  8febfc6c  8febfc98  [stack:5634]
+         8febfc70  8febfdd0  [stack:5634]
+         8febfc74  00000081  
+         8febfc78  b76abfcc  /system/lib/libc.so
+         8febfc7c  b7627eb0  /system/lib/libc.so (sigwait+80)
+         8febfc80  8febfc98  [stack:5634]
+         8febfc84  00000000  
+         8febfc88  00000000  
+         8febfc8c  00000008  
+         8febfc90  0000000f  
+         8febfc94  b7b58b90  [heap]
+         8febfc98  00000204  
+         8febfc9c  00000000  
+         8febfca0  b7627e67  /system/lib/libc.so (sigwait+7)
+         8febfca4  b4e52cac  /system/lib/libdvm.so
+         8febfca8  8febfce8  [stack:5634]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5636, name: ReferenceQueueD
+    eax fffffe00  ebx b7a2c930  ecx 00000080  edx ffffffe8
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764d569  ebp b7a2c930  esp 8ae86984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 0004f91f  [heap]
+
+stack:
+         8ae86944  00000000  
+         8ae86948  00000000  
+         8ae8694c  00000000  
+         8ae86950  00000000  
+         8ae86954  00000000  
+         8ae86958  00000000  
+         8ae8695c  00000000  
+         8ae86960  00000000  
+         8ae86964  00000000  
+         8ae86968  00000000  
+         8ae8696c  00000000  
+         8ae86970  00000000  
+         8ae86974  00000000  
+         8ae86978  00000000  
+         8ae8697c  00000000  
+         8ae86980  00000000  
+    #00  8ae86984  b7a2c920  [heap]
+         8ae86988  b76abfcc  /system/lib/libc.so
+         8ae8698c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8ae86990  b7a2c930  [heap]
+         8ae86994  00000080  
+         8ae86998  ffffffe8  
+         8ae8699c  00000000  
+         8ae869a0  b79ec360  [heap]
+         8ae869a4  00000080  
+         8ae869a8  00000000  
+         8ae869ac  00000000  
+         8ae869b0  00000000  
+         8ae869b4  00000000  
+         8ae869b8  ffffffe8  
+         8ae869bc  00000000  
+         8ae869c0  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5638, name: FinalizerDaemon
+    eax fffffe00  ebx b7a053e0  ecx 00000080  edx ffffffe8
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764d569  ebp b7a053e0  esp 8ad88984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 000283cf  [heap]
+
+stack:
+         8ad88944  bbf33318  [heap]
+         8ad88948  8499c000  
+         8ad8894c  b761c370  /system/lib/libc.so (free+32)
+         8ad88950  b4e52cac  /system/lib/libdvm.so
+         8ad88954  87c00001  
+         8ad88958  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         8ad8895c  b76abfcc  /system/lib/libc.so
+         8ad88960  bc005c58  [heap]
+         8ad88964  15551554  
+         8ad88968  00000052  
+         8ad8896c  b7622575  /system/lib/libc.so (dlfree+885)
+         8ad88970  b76b0820  
+         8ad88974  b761c356  /system/lib/libc.so (free+6)
+         8ad88978  b6af3ed8  /system/lib/libicuuc.so
+         8ad8897c  b4e52cac  /system/lib/libdvm.so
+         8ad88980  b7a05040  [heap]
+    #00  8ad88984  b7a053d0  [heap]
+         8ad88988  b76abfcc  /system/lib/libc.so
+         8ad8898c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8ad88990  b7a053e0  [heap]
+         8ad88994  00000080  
+         8ad88998  ffffffe8  
+         8ad8899c  00000000  
+         8ad889a0  00000001  
+         8ad889a4  7234523c  
+         8ad889a8  00000000  
+         8ad889ac  b76abfcc  /system/lib/libc.so
+         8ad889b0  00000000  
+         8ad889b4  8ad88a20  [stack:5638]
+         8ad889b8  ffffffe8  
+         8ad889bc  b7670815  /system/lib/libc.so (clock_gettime+37)
+         8ad889c0  00000001  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5639, name: FinalizerWatchd
+    eax fffffe00  ebx b7a2bb20  ecx 00000080  edx fffffff4
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764d569  ebp b7a2bb20  esp 8ac8a984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 0004eb0f  [heap]
+
+stack:
+         8ac8a944  8ac8a968  [stack:5639]
+         8ac8a948  00000000  
+         8ac8a94c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8ac8a950  00000001  
+         8ac8a954  ffffff92  
+         8ac8a958  fffffff4  
+         8ac8a95c  b761d199  /system/lib/libc.so (pthread_mutex_trylock+25)
+         8ac8a960  00000000  
+         8ac8a964  b79e5690  [heap]
+         8ac8a968  00000009  
+         8ac8a96c  3b8b87be  
+         8ac8a970  000003e8  
+         8ac8a974  00000000  
+         8ac8a978  b761e499  /system/lib/libc.so (pthread_cond_timedwait_monotonic+9)
+         8ac8a97c  b4e52cac  /system/lib/libdvm.so
+         8ac8a980  b7a2bb10  [heap]
+    #00  8ac8a984  b7a2bb10  [heap]
+         8ac8a988  b76abfcc  /system/lib/libc.so
+         8ac8a98c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8ac8a990  b7a2bb20  [heap]
+         8ac8a994  00000080  
+         8ac8a998  fffffff4  
+         8ac8a99c  00000000  
+         8ac8a9a0  00000001  
+         8ac8a9a4  a0af4edc  /dev/ashmem/dalvik-heap (deleted)
+         8ac8a9a8  00000000  
+         8ac8a9ac  b76abfcc  /system/lib/libc.so
+         8ac8a9b0  00000000  
+         8ac8a9b4  8ac8aa20  [stack:5639]
+         8ac8a9b8  fffffff4  
+         8ac8a9bc  b7670815  /system/lib/libc.so (clock_gettime+37)
+         8ac8a9c0  00000001  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5640, name: Binder_1
+    eax 00000000  ebx 00000021  ecx c0186201  edx 8ab8cc48
+    esi b7a2a320  edi b7a2a350
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764b726  ebp 8ab8cc48  esp 8ab8cbd0  flags 00210286
+
+backtrace:
+    #00  pc 0003c726  /system/lib/libc.so (__ioctl+22)
+    #01  pc 0004d37f  [heap]
+
+stack:
+         8ab8cb90  00000022  
+         8ab8cb94  8ab8cbd7  [stack:5640]
+         8ab8cb98  00000004  
+         8ab8cb9c  00000000  
+         8ab8cba0  000003e8  
+         8ab8cba4  0000003c  
+         8ab8cba8  00000000  
+         8ab8cbac  8ffc4260  /dev/binder
+         8ab8cbb0  8ffc429c  /dev/binder
+         8ab8cbb4  b7532bcc  /system/lib/libandroid_runtime.so
+         8ab8cbb8  8ab8cbdb  [stack:5640]
+         8ab8cbbc  00000022  
+         8ab8cbc0  00000000  
+         8ab8cbc4  00000000  
+         8ab8cbc8  b757dad9  /system/lib/libbinder.so (android::Parcel::continueWrite(unsigned int)+9)
+         8ab8cbcc  b759adf8  /system/lib/libbinder.so
+    #00  8ab8cbd0  b7a2a380  [heap]
+         8ab8cbd4  00000000  
+         8ab8cbd8  b76abfcc  /system/lib/libc.so
+         8ab8cbdc  b766c3ac  /system/lib/libc.so (ioctl+44)
+         8ab8cbe0  00000021  
+         8ab8cbe4  c0186201  
+         8ab8cbe8  8ab8cc48  [stack:5640]
+         8ab8cbec  b759adf8  /system/lib/libbinder.so
+         8ab8cbf0  b7a2a320  [heap]
+         8ab8cbf4  b766c386  /system/lib/libc.so (ioctl+6)
+         8ab8cbf8  b759adf8  /system/lib/libbinder.so
+         8ab8cbfc  b75743b4  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+404)
+         8ab8cc00  00000021  
+         8ab8cc04  c0186201  
+         8ab8cc08  8ab8cc48  [stack:5640]
+         8ab8cc0c  b761b64c  /system/lib/libc.so (pthread_setspecific+172)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5641, name: Binder_2
+    eax 00000000  ebx 00000021  ecx c0186201  edx 8aa8ec48
+    esi b7b57bd0  edi b7b57c00
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764b726  ebp 8aa8ec48  esp 8aa8ebd0  flags 00210286
+
+backtrace:
+    #00  pc 0003c726  /system/lib/libc.so (__ioctl+22)
+    #01  pc 0017ac2f  [heap]
+
+stack:
+         8aa8eb90  00000022  
+         8aa8eb94  8aa8ebd7  [stack:5641]
+         8aa8eb98  00000004  
+         8aa8eb9c  00000000  
+         8aa8eba0  000003e8  
+         8aa8eba4  0000003c  
+         8aa8eba8  00000000  
+         8aa8ebac  8ffc42c4  /dev/binder
+         8aa8ebb0  8ffc4300  /dev/binder
+         8aa8ebb4  ffffffff  
+         8aa8ebb8  8aa8ebdb  [stack:5641]
+         8aa8ebbc  00000022  
+         8aa8ebc0  00000000  
+         8aa8ebc4  00000000  
+         8aa8ebc8  b757dad9  /system/lib/libbinder.so (android::Parcel::continueWrite(unsigned int)+9)
+         8aa8ebcc  b759adf8  /system/lib/libbinder.so
+    #00  8aa8ebd0  b7b57c30  [heap]
+         8aa8ebd4  00000000  
+         8aa8ebd8  b76abfcc  /system/lib/libc.so
+         8aa8ebdc  b766c3ac  /system/lib/libc.so (ioctl+44)
+         8aa8ebe0  00000021  
+         8aa8ebe4  c0186201  
+         8aa8ebe8  8aa8ec48  [stack:5641]
+         8aa8ebec  b759adf8  /system/lib/libbinder.so
+         8aa8ebf0  b7b57bd0  [heap]
+         8aa8ebf4  b766c386  /system/lib/libc.so (ioctl+6)
+         8aa8ebf8  b759adf8  /system/lib/libbinder.so
+         8aa8ebfc  b75743b4  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+404)
+         8aa8ec00  00000021  
+         8aa8ec04  c0186201  
+         8aa8ec08  8aa8ec48  [stack:5641]
+         8aa8ec0c  b761b64c  /system/lib/libc.so (pthread_setspecific+172)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5646, name: WifiManager
+    eax fffffffc  ebx 0000002b  ecx 8a2158bc  edx 00000010
+    esi ffffffff  edi b7a20724
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764d21b  ebp b7a20710  esp 8a21584c  flags 00210246
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+    #01  pc fffffffe  <unknown>
+    #02  pc 0004377f  [heap]
+    #03  pc 0001e0ff  /system/lib/libutils.so
+    #04  pc 00012e8f  /system/lib/libutils.so
+    #05  pc 00012e9f  /system/lib/libutils.so
+    #06  pc 00012eaf  /system/lib/libutils.so
+    #07  pc 00012ebf  /system/lib/libutils.so
+    #08  pc ffffffff  <unknown>
+    #09  pc 0084708f  /system/usr/icu/icudt51l.dat
+
+stack:
+         8a21580c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8a215810  00000000  
+         8a215814  00000000  
+         8a215818  00000000  
+         8a21581c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8a215820  00000000  
+         8a215824  00000000  
+         8a215828  0101cec9  
+         8a21582c  b75e3e74  /system/lib/libutils.so
+         8a215830  b7a20710  [heap]
+         8a215834  b7a20724  [heap]
+         8a215838  b7a20710  [heap]
+         8a21583c  b75d5b7f  /system/lib/libutils.so (android::VectorImpl::clear()+31)
+         8a215840  b7a20758  [heap]
+         8a215844  00000000  
+         8a215848  00000000  
+    #00  8a21584c  ffffffff  
+         ........  ........
+         ........  ........
+    #03  b75e3b50  b75cce90  /system/lib/libutils.so (android::RefBase::onFirstRef())
+    #04  b75e3b54  b75ccea0  /system/lib/libutils.so (android::RefBase::onLastStrongRef(void const*))
+         b75e3b58  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+         b75e3b5c  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+         b75e3b60  00000004  
+         b75e3b64  00000000  
+         b75e3b68  00000000  
+         b75e3b6c  b75d6fe0  /system/lib/libutils.so (android::MessageHandler::~MessageHandler())
+         b75e3b70  b75d7440  /system/lib/libutils.so (android::MessageHandler::~MessageHandler())
+         b75e3b74  b760bb10  /system/lib/libstdc++.so (__cxa_pure_virtual)
+         b75e3b78  00000000  
+         b75e3b7c  00000000  
+         b75e3b80  00000000  
+         b75e3b84  00000000  
+         b75e3b88  fffffffc  
+         b75e3b8c  fffffffc  
+         b75e3b90  00000000  
+         ........  ........
+    #05  b75e3ba4  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+    #06  b75e3ba8  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+    #07  b75e3bac  00000000  
+         b75e3bb0  00000000  
+         b75e3bb4  00000000  
+         b75e3bb8  00000000  
+         b75e3bbc  00000000  
+         b75e3bc0  00000004  
+         b75e3bc4  00000000  
+         b75e3bc8  00000000  
+         b75e3bcc  b75d6f90  /system/lib/libutils.so (android::LooperCallback::~LooperCallback())
+         b75e3bd0  b75d74a0  /system/lib/libutils.so (android::LooperCallback::~LooperCallback())
+         b75e3bd4  b760bb10  /system/lib/libstdc++.so (__cxa_pure_virtual)
+         b75e3bd8  00000000  
+         b75e3bdc  00000000  
+         b75e3be0  00000000  
+         b75e3be4  00000000  
+         b75e3be8  fffffffc  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5655, name: .ProcessManager
+    eax fffffe00  ebx b7b7a3c0  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764d569  ebp b7b7a3c0  esp 89a4c984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 000143af  [heap]
+
+stack:
+         89a4c944  00000000  
+         89a4c948  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         89a4c94c  b76abfcc  /system/lib/libc.so
+         89a4c950  11110014  
+         89a4c954  b7a29af0  [heap]
+         89a4c958  b76b06b8  
+         89a4c95c  b7621eaf  /system/lib/libc.so (dlmalloc+351)
+         89a4c960  b76b0820  
+         89a4c964  b7627de5  /system/lib/libc.so (__set_errno+21)
+         89a4c968  00000000  
+         89a4c96c  00000000  
+         89a4c970  00000000  
+         89a4c974  b764ab6a  /system/lib/libc.so (wait4+42)
+         89a4c978  0000000a  
+         89a4c97c  89a4c9dc  [stack:5655]
+         89a4c980  0000000a  
+    #00  89a4c984  b7b7a3b0  [heap]
+         89a4c988  b76abfcc  /system/lib/libc.so
+         89a4c98c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         89a4c990  b7b7a3c0  [heap]
+         89a4c994  00000080  
+         89a4c998  00000000  
+         89a4c99c  00000000  
+         89a4c9a0  00000000  
+         89a4c9a4  b764db0d  /system/lib/libc.so (memset+269)
+         89a4c9a8  00000000  
+         89a4c9ac  b7622a61  /system/lib/libc.so (dlcalloc+97)
+         89a4c9b0  00000000  
+         89a4c9b4  00000000  
+         89a4c9b8  00000000  
+         89a4c9bc  b761d199  /system/lib/libc.so (pthread_mutex_trylock+25)
+         89a4c9c0  b76abfcc  /system/lib/libc.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5657, name: ll.clashofclans
+
+backtrace:
+    #00  pc 0018df72  /system/lib/lib3btrans.so
+    #01  pc 0018bf3d  /system/lib/lib3btrans.so
+    #02  pc 0018bf3d  /system/lib/lib3btrans.so
+    #03  pc 000000ef  <unknown>
+    #04  pc 0018e190  /system/lib/lib3btrans.so
+
+stack:
+         1a0ffc54  00000012  
+         1a0ffc58  b7622575  /system/lib/libc.so (dlfree+885)
+         1a0ffc5c  b76b0820  
+         1a0ffc60  ba508730  [heap]
+         1a0ffc64  ba508730  [heap]
+         1a0ffc68  b7388ed1  /system/lib/libz.so (deflate+449)
+         1a0ffc6c  ba52ab2c  [heap]
+         1a0ffc70  b9f77ee8  [heap]
+         1a0ffc74  8499c000  
+         1a0ffc78  b738b401  /system/lib/libz.so (gz_error+33)
+         1a0ffc7c  ba508730  [heap]
+         1a0ffc80  00000000  
+         1a0ffc84  b7622209  /system/lib/libc.so (dlfree+9)
+         1a0ffc88  b76abfcc  /system/lib/libc.so
+         1a0ffc8c  b9f77e60  [heap]
+         1a0ffc90  b9f77eb4  [heap]
+    #00  1a0ffc94  1a0ffca4  [stack:5657]
+         1a0ffc98  89f096c0  
+         1a0ffc9c  00000000  
+         1a0ffca0  89edfcbc  
+         1a0ffca4  1a0ffce4  [stack:5657]
+    #01  1a0ffca8  89bd8f3e  /system/lib/lib3btrans.so
+    #02  1a0ffcac  000000f0  
+         ........  ........
+         ........  ........
+    #04  1a0ffcec  89edfcbc  
+         1a0ffcf0  00002000  
+         1a0ffcf4  b738ffb9  /system/lib/libz.so (gzclose_w+9)
+         1a0ffcf8  b73a0f98  /system/lib/libz.so
+         1a0ffcfc  846cf000  
+         1a0ffd00  007c603c  
+         1a0ffd04  1a0ffd24  [stack:5657]
+         1a0ffd08  89bd5751  /system/lib/lib3btrans.so
+         1a0ffd0c  89edfcbc  
+         1a0ffd10  00000000  
+         1a0ffd14  b738a139  /system/lib/libz.so (gzopen+9)
+         1a0ffd18  b9f77e60  [heap]
+         1a0ffd1c  89f096c0  
+         1a0ffd20  b738a0e6  /system/lib/libz.so (gzclose+6)
+         1a0ffd24  1a0ffda4  [stack:5657]
+         1a0ffd28  89bcbd3c  /system/lib/lib3btrans.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5658, name: dTi
+
+backtrace:
+    #00  pc 0018df72  /system/lib/lib3btrans.so
+    #01  pc 0018bf3d  /system/lib/lib3btrans.so
+    #02  pc 0018bf3d  /system/lib/lib3btrans.so
+    #03  pc 000000ef  <unknown>
+    #04  pc 0018e190  /system/lib/lib3btrans.so
+
+stack:
+         1a211c54  1a211c74  [stack:5658]
+         1a211c58  89b4ac2f  /system/lib/lib3btrans.so
+         1a211c5c  1a211d4c  [stack:5658]
+         1a211c60  00000000  
+         1a211c64  1a211c84  [stack:5658]
+         1a211c68  89bdb1f1  /system/lib/lib3btrans.so
+         1a211c6c  18030084  
+         1a211c70  00000078  
+         1a211c74  1a211c94  [stack:5658]
+         1a211c78  89bdb7de  /system/lib/lib3btrans.so
+         1a211c7c  180590ec  
+         1a211c80  18ca4178  
+         1a211c84  1a211ca4  [stack:5658]
+         1a211c88  89dda984  
+         1a211c8c  00000000  
+         1a211c90  00000001  
+    #00  1a211c94  1a211ca4  [stack:5658]
+         1a211c98  00000000  
+         1a211c9c  00000000  
+         1a211ca0  89dda9bc  
+         1a211ca4  1a211ce4  [stack:5658]
+    #01  1a211ca8  89bd8f3e  /system/lib/lib3btrans.so
+    #02  1a211cac  000000f0  
+         ........  ........
+         ........  ........
+    #04  1a211cec  89dda9bc  
+         1a211cf0  00000000  
+         1a211cf4  1c114020  
+         1a211cf8  00000036  
+         1a211cfc  00000020  
+         1a211d00  90512c96  /system/usr/icu/icudt51l.dat
+         1a211d04  1a211d24  [stack:5658]
+         1a211d08  89bd5751  /system/lib/lib3btrans.so
+         1a211d0c  89dda9bc  
+         1a211d10  00003000  
+         1a211d14  00000000  
+         1a211d18  90512c96  /system/usr/icu/icudt51l.dat
+         1a211d1c  1c11404c  
+         1a211d20  1c114078  
+         1a211d24  1a211da4  [stack:5658]
+         1a211d28  89bcce7e  /system/lib/lib3btrans.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5659, name: AsyncTask #1
+    eax fffffe00  ebx b7b7bfa0  ecx 00000080  edx ffffffca
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b7b7bfa0  esp 8a033984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 00015f8f  [heap]
+
+stack:
+         8a033944  00000000  
+         8a033948  b76b06e8  
+         8a03394c  b759adf8  /system/lib/libbinder.so
+         8a033950  b7a2b610  [heap]
+         8a033954  8a033a20  [stack:5659]
+         8a033958  b7622209  /system/lib/libc.so (dlfree+9)
+         8a03395c  b4e52cac  /system/lib/libdvm.so
+         8a033960  b79e55d0  [heap]
+         8a033964  b764da25  /system/lib/libc.so (memset+37)
+         8a033968  b4e52cac  /system/lib/libdvm.so
+         8a03396c  b4d7af79  /system/lib/libdvm.so (mspace_calloc+105)
+         8a033970  9cf92050  /dev/ashmem/dalvik-heap (deleted)
+         8a033974  00000000  
+         8a033978  00000010  
+         8a03397c  b759adf8  /system/lib/libbinder.so
+         8a033980  b4e52cac  /system/lib/libdvm.so
+    #00  8a033984  b7b7bf90  [heap]
+         8a033988  b76abfcc  /system/lib/libc.so
+         8a03398c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8a033990  b7b7bfa0  [heap]
+         8a033994  00000080  
+         8a033998  ffffffca  
+         8a03399c  00000000  
+         8a0339a0  00000000  
+         8a0339a4  00000000  
+         8a0339a8  00000000  
+         8a0339ac  00347268  
+         8a0339b0  00000000  
+         8a0339b4  00000000  
+         8a0339b8  ffffffca  
+         8a0339bc  b4e52cac  /system/lib/libdvm.so
+         8a0339c0  b79e55d0  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5660, name: AsyncTask #2
+    eax fffffe00  ebx b7b7c900  ecx 00000080  edx ffffffc8
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b7b7c900  esp 8954e984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 000168ef  [heap]
+
+stack:
+         8954e944  00000000  
+         8954e948  8499c000  
+         8954e94c  b759adf8  /system/lib/libbinder.so
+         8954e950  b7b948e0  [heap]
+         8954e954  8954ea20  [stack:5660]
+         8954e958  b7622209  /system/lib/libc.so (dlfree+9)
+         8954e95c  b4e52cac  /system/lib/libdvm.so
+         8954e960  b79e55d0  [heap]
+         8954e964  b764da25  /system/lib/libc.so (memset+37)
+         8954e968  b4e52cac  /system/lib/libdvm.so
+         8954e96c  b4d7af79  /system/lib/libdvm.so (mspace_calloc+105)
+         8954e970  9cfeebf8  /dev/ashmem/dalvik-heap (deleted)
+         8954e974  00000000  
+         8954e978  00000010  
+         8954e97c  b759adf8  /system/lib/libbinder.so
+         8954e980  b4e52cac  /system/lib/libdvm.so
+    #00  8954e984  b7b7c8f0  [heap]
+         8954e988  b76abfcc  /system/lib/libc.so
+         8954e98c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8954e990  b7b7c900  [heap]
+         8954e994  00000080  
+         8954e998  ffffffc8  
+         8954e99c  00000000  
+         8954e9a0  00000000  
+         8954e9a4  00000000  
+         8954e9a8  00000000  
+         8954e9ac  00348d08  
+         8954e9b0  00000000  
+         8954e9b4  00000000  
+         8954e9b8  ffffffc8  
+         8954e9bc  b4e52cac  /system/lib/libdvm.so
+         8954e9c0  b79e55d0  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5683, name: GAC_Executor[0]
+    eax fffffe00  ebx b7b80bb0  ecx 00000080  edx fffffffa
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b7b80bb0  esp 89154984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 0001ab9f  [heap]
+
+stack:
+         89154944  b9fd8f08  [heap]
+         89154948  8499c000  
+         8915494c  b759adf8  /system/lib/libbinder.so
+         89154950  b9f5db50  [heap]
+         89154954  89154a20  [stack:5683]
+         89154958  b7622209  /system/lib/libc.so (dlfree+9)
+         8915495c  b76abfcc  /system/lib/libc.so
+         89154960  b9f5db10  [heap]
+         89154964  b7b84610  [heap]
+         89154968  ba83bcf0  [heap]
+         8915496c  b761c370  /system/lib/libc.so (free+32)
+         89154970  b9fd8f00  [heap]
+         89154974  b7b7ff70  [heap]
+         89154978  b9f5db10  [heap]
+         8915497c  b759adf8  /system/lib/libbinder.so
+         89154980  b759adf8  /system/lib/libbinder.so
+    #00  89154984  b7b80ba0  [heap]
+         89154988  b76abfcc  /system/lib/libc.so
+         8915498c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         89154990  b7b80bb0  [heap]
+         89154994  00000080  
+         89154998  fffffffa  
+         8915499c  00000000  
+         891549a0  00000000  
+         891549a4  fffc000c  
+         891549a8  00000000  
+         891549ac  b9f5db50  [heap]
+         891549b0  00000000  
+         891549b4  b9fd8f00  [heap]
+         891549b8  fffffffa  
+         891549bc  b4e52cac  /system/lib/libdvm.so
+         891549c0  b79e55d0  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5684, name: pool-4-thread-1
+    eax fffffe00  ebx b7bb6920  ecx 00000080  edx ffffffba
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b7bb6920  esp 89050984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 0005090f  [heap]
+
+stack:
+         89050944  ba03f918  [heap]
+         89050948  8499c000  
+         8905094c  ba03f8d0  [heap]
+         89050950  b76b0820  
+         89050954  00000171  
+         89050958  b7622209  /system/lib/libc.so (dlfree+9)
+         8905095c  b76abfcc  /system/lib/libc.so
+         89050960  b7bb6580  [heap]
+         89050964  ba03f8d0  [heap]
+         89050968  00000000  
+         8905096c  b761c370  /system/lib/libc.so (free+32)
+         89050970  ba03f8d0  [heap]
+         89050974  00000007  
+         89050978  b7622209  /system/lib/libc.so (dlfree+9)
+         8905097c  b4e52cac  /system/lib/libdvm.so
+         89050980  b7bb6580  [heap]
+    #00  89050984  b7bb6910  [heap]
+         89050988  b76abfcc  /system/lib/libc.so
+         8905098c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         89050990  b7bb6920  [heap]
+         89050994  00000080  
+         89050998  ffffffba  
+         8905099c  00000000  
+         890509a0  b7bb6580  [heap]
+         890509a4  00000000  
+         890509a8  00000000  
+         890509ac  9134e890  /system/lib/libjavacore.so
+         890509b0  00000000  
+         890509b4  b7b7de20  [heap]
+         890509b8  ffffffba  
+         890509bc  b4e52cac  /system/lib/libdvm.so
+         890509c0  b79e55d0  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5707, name: GAC_Executor[1]
+    eax fffffe00  ebx b7b85a60  ecx 00000080  edx fffffffa
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b7b85a60  esp 88d03984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 0001fa4f  [heap]
+
+stack:
+         88d03944  fffc004c  
+         88d03948  9cf76980  /dev/ashmem/dalvik-heap (deleted)
+         88d0394c  9ccee060  /dev/ashmem/dalvik-heap (deleted)
+         88d03950  b7a2b610  [heap]
+         88d03954  88d03a20  [stack:5707]
+         88d03958  b7b86980  [heap]
+         88d0395c  b4e52cac  /system/lib/libdvm.so
+         88d03960  b79e55d0  [heap]
+         88d03964  b764da25  /system/lib/libc.so (memset+37)
+         88d03968  b4e52cac  /system/lib/libdvm.so
+         88d0396c  b4d7af79  /system/lib/libdvm.so (mspace_calloc+105)
+         88d03970  9ce38fe0  /dev/ashmem/dalvik-heap (deleted)
+         88d03974  00000000  
+         88d03978  00000014  
+         88d0397c  b759adf8  /system/lib/libbinder.so
+         88d03980  b4e52cac  /system/lib/libdvm.so
+    #00  88d03984  b7b85a50  [heap]
+         88d03988  b76abfcc  /system/lib/libc.so
+         88d0398c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         88d03990  b7b85a60  [heap]
+         88d03994  00000080  
+         88d03998  fffffffa  
+         88d0399c  00000000  
+         88d039a0  00000000  
+         88d039a4  fff0000c  
+         88d039a8  00000000  
+         88d039ac  b761d199  /system/lib/libc.so (pthread_mutex_trylock+25)
+         88d039b0  00000000  
+         88d039b4  b9fd8f00  [heap]
+         88d039b8  fffffffa  
+         88d039bc  b4e52cac  /system/lib/libdvm.so
+         88d039c0  b79e55d0  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5757, name: AudioTrack
+    eax fffffdfc  ebx b7c088dc  ecx 00000080  edx fffffffe
+    esi 88a1ac78  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip b764d569  ebp b7c088dc  esp 88a1abe4  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 000a28d7  [heap]
+
+stack:
+         88a1aba4  00000000  
+         88a1aba8  00000000  
+         88a1abac  b4e52cac  /system/lib/libdvm.so
+         88a1abb0  76616a4c  
+         88a1abb4  616c2f61  
+         88a1abb8  542f676e  
+         88a1abbc  b7b89700  [heap]
+         88a1abc0  00000000  
+         88a1abc4  b7b93b2c  [heap]
+         88a1abc8  018ef000  
+         88a1abcc  00000000  
+         88a1abd0  ffffffff  
+         88a1abd4  ffffffff  
+         88a1abd8  00000000  
+         88a1abdc  00000000  
+         88a1abe0  00000001  
+    #00  88a1abe4  b7c088d8  [heap]
+         88a1abe8  b76abfcc  /system/lib/libc.so
+         88a1abec  b761eb96  /system/lib/libc.so (pthread_cond_timedwait_relative_np+166)
+         88a1abf0  b7c088dc  [heap]
+         88a1abf4  00000080  
+         88a1abf8  fffffffe  
+         88a1abfc  88a1ac78  [stack:5757]
+         88a1ac00  b7b89a6c  [heap]
+         88a1ac04  b7b936f0  [heap]
+         88a1ac08  00000000  
+         88a1ac0c  00000000  
+         88a1ac10  00000000  
+         88a1ac14  88a1ac40  [stack:5757]
+         88a1ac18  fffffffe  
+         88a1ac1c  3b9aca00  
+         88a1ac20  3b9aca00  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5758, name: Thread-94
+    eax 00000000  ebx 8881d008  ecx 00000000  edx 00000000
+    esi 00000000  edi 8881d008
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip b764d569  ebp b7c08d30  esp 8881c5b4  flags 00210246
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc ffffffff  <unknown>
+    #02  pc 000a2d5f  [heap]
+    #03  pc 0005f3cf  /system/lib/libmedia.so
+    #04  pc 00012e8f  /system/lib/libutils.so
+    #05  pc 0005eb1f  /system/lib/libmedia.so
+    #06  pc 0005ebcf  /system/lib/libmedia.so
+    #07  pc 0005eb2f  /system/lib/libmedia.so
+    #08  pc ffffffff  <unknown>
+    #09  pc 0084708f  /system/usr/icu/icudt51l.dat
+
+stack:
+         8881c574  00000000  
+         8881c578  00000000  
+         8881c57c  00000000  
+         8881c580  00000000  
+         8881c584  00000000  
+         8881c588  00000000  
+         8881c58c  00000000  
+         8881c590  00000000  
+         8881c594  00000000  
+         8881c598  00000000  
+         8881c59c  00000000  
+         8881c5a0  00000000  
+         8881c5a4  00000000  
+         8881c5a8  00000000  
+         8881c5ac  00000000  
+         8881c5b0  00000000  
+    #00  8881c5b4  00000000  
+         ........  ........
+         ........  ........
+    #03  b6375cf0  b75cce90  /system/lib/libutils.so (android::RefBase::onFirstRef())
+    #04  b6375cf4  b75ccea0  /system/lib/libutils.so (android::RefBase::onLastStrongRef(void const*))
+         b6375cf8  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+         b6375cfc  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+         b6375d00  b62ffb80  /system/lib/libmedia.so (android::ClientProxy::getMisalignment())
+         b6375d04  b62ffbb0  /system/lib/libmedia.so (android::AudioTrackClientProxy::flush())
+         b6375d08  b62ffb10  /system/lib/libmedia.so (android::AudioTrackClientProxy::getUnderrunFrames() const)
+         b6375d0c  00000000  
+         b6375d10  00000000  
+         b6375d14  00000000  
+         b6375d18  00000000  
+         b6375d1c  00000000  
+         b6375d20  00000000  
+         b6375d24  00000000  
+         b6375d28  b63003a0  /system/lib/libmedia.so (android::StaticAudioTrackClientProxy::~StaticAudioTrackClientProxy())
+         b6375d2c  b6300420  /system/lib/libmedia.so (android::StaticAudioTrackClientProxy::~StaticAudioTrackClientProxy())
+         b6375d30  b75cce90  /system/lib/libutils.so (android::RefBase::onFirstRef())
+         ........  ........
+    #05  b6375d44  b62ffbd0  /system/lib/libmedia.so (android::StaticAudioTrackClientProxy::flush())
+    #06  b6375d48  b62ffb30  /system/lib/libmedia.so (android::StaticAudioTrackClientProxy::getUnderrunFrames() const)
+    #07  b6375d4c  00000000  
+         b6375d50  00000000  
+         b6375d54  00000000  
+         b6375d58  00000000  
+         b6375d5c  00000000  
+         b6375d60  00000000  
+         b6375d64  00000000  
+         b6375d68  b6300270  /system/lib/libmedia.so (android::ServerProxy::~ServerProxy())
+         b6375d6c  b6300320  /system/lib/libmedia.so (android::ServerProxy::~ServerProxy())
+         b6375d70  b75cce90  /system/lib/libutils.so (android::RefBase::onFirstRef())
+         b6375d74  b75ccea0  /system/lib/libutils.so (android::RefBase::onLastStrongRef(void const*))
+         b6375d78  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+         b6375d7c  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+         b6375d80  b6300050  /system/lib/libmedia.so (android::ServerProxy::obtainBuffer(android::Proxy::Buffer*, bool))
+         b6375d84  b62ffee0  /system/lib/libmedia.so (android::ServerProxy::releaseBuffer(android::Proxy::Buffer*))
+         b6375d88  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5759, name: Thread-94
+    eax 00000000  ebx 88802ea8  ecx 88802ea8  edx 88802ea8
+    esi 00000000  edi 56504aa7
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip 89bdeec6  ebp 887eab78  esp 887eab70  flags 00210246
+
+backtrace:
+    #00  pc 00191ec6  /system/lib/lib3btrans.so
+
+stack:
+         887eab30  00000000  
+         887eab34  000001dc  
+         887eab38  fffffe3b  
+         887eab3c  00001700  
+         887eab40  00000270  
+         887eab44  00000000  
+         887eab48  0000175f  
+         887eab4c  00000271  
+         887eab50  1a239030  
+         887eab54  887eabb4  [stack:5759]
+         887eab58  00000000  
+         887eab5c  00000000  
+         887eab60  0000001c  
+         887eab64  00000271  
+         887eab68  00000000  
+         887eab6c  f57ff05f  
+    #00  887eab70  00000000  
+         887eab74  00000000  
+         887eab78  887ead08  [stack:5759]
+         887eab7c  89bddaff  /system/lib/lib3btrans.so
+         887eab80  000000a2  
+         887eab84  88802ea8  
+         887eab88  88802ea8  
+         887eab8c  e1831f92  
+         887eab90  887eabb4  [stack:5759]
+         887eab94  1a239030  
+         887eab98  1a2391c0  
+         887eab9c  887eabbc  [stack:5759]
+         887eaba0  89bd5771  /system/lib/lib3btrans.so
+         887eaba4  1a2391c0  
+         887eaba8  89ddac80  
+         887eabac  887eabec  [stack:5759]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 5954, name: Thread-94
+    eax 00000000  ebx 88241ea8  ecx 88241ea8  edx 88241ea8
+    esi 00000000  edi b92697c8
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip 89bdeec6  ebp 881c2b78  esp 881c2b70  flags 00210246
+
+backtrace:
+    #00  pc 00191ec6  /system/lib/lib3btrans.so
+    #01  pc ffffffff  <unknown>
+    #02  pc 0000aea7  <unknown>
+
+stack:
+         881c2b30  881c2bb4  [stack:5954]
+         881c2b34  1a25d030  
+         881c2b38  fffffd28  
+         881c2b3c  00001000  
+         881c2b40  0000015e  
+         881c2b44  00000000  
+         881c2b48  00001002  
+         881c2b4c  0000015e  
+         881c2b50  1a25d030  
+         881c2b54  881c2bb4  [stack:5954]
+         881c2b58  00000000  
+         881c2b5c  00000100  
+         881c2b60  00000000  
+         881c2b64  881c2bb4  [stack:5954]
+         881c2b68  0000015e  
+         881c2b6c  1a25d030  
+    #00  881c2b70  00000000  
+         881c2b74  00000000  
+         881c2b78  881c2d08  [stack:5954]
+         881c2b7c  89bddaff  /system/lib/lib3btrans.so
+         881c2b80  000000a2  
+         881c2b84  88241ea8  
+         881c2b88  88241ea8  
+         881c2b8c  00000000  
+         881c2b90  ecbd8b02  
+         881c2b94  881c2bb4  [stack:5954]
+         881c2b98  1a25d030  
+         881c2b9c  881c2bbc  [stack:5954]
+         881c2ba0  89bdb1b1  /system/lib/lib3btrans.so
+         881c2ba4  140cb9e8  /data/app-lib/com.supercell.clashofclans-2/libfmod.so
+         881c2ba8  0000015e  
+         881c2bac  1a25d030  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6132, name: ll.clashofclans
+    eax fffffe00  ebx 86071ad8  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 86071ad8  esp 86071a14  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         860719d4  00000000  
+         860719d8  00000000  
+         860719dc  00000000  
+         860719e0  00000000  
+         860719e4  00000000  
+         860719e8  00000000  
+         860719ec  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         860719f0  00000000  
+         860719f4  00000000  
+         860719f8  00000000  
+         860719fc  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         86071a00  00000000  
+         86071a04  b79e3b60  [heap]
+         86071a08  b7ba1a00  [heap]
+         86071a0c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         86071a10  00000000  
+    #00  86071a14  86071ad4  [stack:6132]
+         86071a18  b76abfcc  /system/lib/libc.so
+         86071a1c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         86071a20  86071ad8  [stack:6132]
+         86071a24  00000080  
+         86071a28  00000000  
+         86071a2c  00000000  
+         86071a30  b9f57380  [heap]
+         86071a34  ee13fd31  
+         86071a38  00000000  
+         86071a3c  8cb84eb8  /system/lib/libwebviewchromium.so
+         86071a40  b9f6b4b8  [heap]
+         86071a44  ee13fd31  
+         86071a48  00000000  
+         86071a4c  8b2d1431  /system/lib/libwebviewchromium.so
+         86071a50  b9f57384  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6133, name: pool-7-thread-1
+    eax fffffe00  ebx b9f78f90  ecx 00000080  edx fffffffa
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip b764d569  ebp b9f78f90  esp 85e75984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 02412f7f  [heap]
+
+stack:
+         85e75944  ba761c28  [heap]
+         85e75948  00000381  
+         85e7594c  b4df69f6  /system/lib/libdvm.so (dexProtoCompare(DexProto const*, DexProto const*)+246)
+         85e75950  8a65b6f7  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e75954  8a65b6f7  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e75958  b76abfcc  /system/lib/libc.so
+         85e7595c  b4d22c39  /system/lib/libdvm.so (dvmChangeStatus(Thread*, ThreadStatus)+25)
+         85e75960  ba761be0  [heap]
+         85e75964  ba761c28  [heap]
+         85e75968  8499c000  
+         85e7596c  8a631164  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e75970  8a631164  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e75974  8a2a35d4  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e75978  8a284098  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e7597c  8a284028  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+         85e75980  8a2a35d4  /data/dalvik-cache/data@app@com.supercell.clashofclans-2.apk@classes.dex
+    #00  85e75984  b9f78f80  [heap]
+         85e75988  b76abfcc  /system/lib/libc.so
+         85e7598c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         85e75990  b9f78f90  [heap]
+         85e75994  00000080  
+         85e75998  fffffffa  
+         85e7599c  00000000  
+         85e759a0  931155ec  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         85e759a4  00000000  
+         85e759a8  00000000  
+         85e759ac  b4d69505  /system/lib/libdvm.so (dvmCompareNameProtoAndMethod(char const*, DexProto const*, Method const*)+69)
+         85e759b0  00000000  
+         85e759b4  931155ec  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         85e759b8  fffffffa  
+         85e759bc  b4e52cac  /system/lib/libdvm.so
+         85e759c0  b79e55d0  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6134, name: ll.clashofclans
+    eax fffffe00  ebx 85d77a78  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 85d77a78  esp 85d779b4  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         85d77974  00000000  
+         85d77978  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         85d7797c  b76abfcc  /system/lib/libc.so
+         85d77980  b9f56438  [heap]
+         85d77984  00000004  
+         85d77988  00000012  
+         85d7798c  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         85d77990  b76b0820  
+         85d77994  85d77c4c  [stack:6134]
+         85d77998  85d77a10  [stack:6134]
+         85d7799c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         85d779a0  85d77a8c  [stack:6134]
+         85d779a4  b9f56458  [heap]
+         85d779a8  b7ba19d0  [heap]
+         85d779ac  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         85d779b0  00000000  
+    #00  85d779b4  85d77a74  [stack:6134]
+         85d779b8  b76abfcc  /system/lib/libc.so
+         85d779bc  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         85d779c0  85d77a78  [stack:6134]
+         85d779c4  00000080  
+         85d779c8  00000000  
+         85d779cc  00000000  
+         85d779d0  b9f4cc00  [heap]
+         85d779d4  ee15a2cd  
+         85d779d8  00000000  
+         85d779dc  8cb84eb8  /system/lib/libwebviewchromium.so
+         85d779e0  b9f4cbe8  [heap]
+         85d779e4  ee15a2cd  
+         85d779e8  00000000  
+         85d779ec  8b2d1431  /system/lib/libwebviewchromium.so
+         85d779f0  b9f4cc04  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6135, name: pool-6-thread-1
+    eax fffffe00  ebx b9f6bcf0  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip b764d569  ebp b9f6bcf0  esp 85c79984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 02405cdf  [heap]
+
+stack:
+         85c79944  b9f7fde8  [heap]
+         85c79948  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         85c7994c  b76abfcc  /system/lib/libc.so
+         85c79950  00000033  
+         85c79954  b9f7feb0  [heap]
+         85c79958  00003120  
+         85c7995c  b7621eaf  /system/lib/libc.so (dlmalloc+351)
+         85c79960  b76b0820  
+         85c79964  b9f7fd70  [heap]
+         85c79968  00000000  
+         85c7996c  b761c370  /system/lib/libc.so (free+32)
+         85c79970  b9f7fd70  [heap]
+         85c79974  b9f5ada0  [heap]
+         85c79978  b4d27fc9  /system/lib/libdvm.so (dvmCreateStringFromUnicode(unsigned short const*, int)+9)
+         85c7997c  b759adf8  /system/lib/libbinder.so
+         85c79980  b759adf8  /system/lib/libbinder.so
+    #00  85c79984  b9f6bce0  [heap]
+         85c79988  b76abfcc  /system/lib/libc.so
+         85c7998c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         85c79990  b9f6bcf0  [heap]
+         85c79994  00000080  
+         85c79998  00000000  
+         85c7999c  00000000  
+         85c799a0  00000000  
+         85c799a4  b764db0d  /system/lib/libc.so (memset+269)
+         85c799a8  00000000  
+         85c799ac  b7622a61  /system/lib/libc.so (dlcalloc+97)
+         85c799b0  00000000  
+         85c799b4  00000000  
+         85c799b8  00000000  
+         85c799bc  b761d199  /system/lib/libc.so (pthread_mutex_trylock+25)
+         85c799c0  b76abfcc  /system/lib/libc.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6136, name: ll.clashofclans
+    eax fffffffc  ebx 00000045  ecx b9f599f0  edx 00000020
+    esi ffffffff  edi b9f61fe0
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d21b  ebp ffffffff  esp 85b7ba0c  flags 00210286
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+
+stack:
+         85b7b9cc  8b2d1431  /system/lib/libwebviewchromium.so
+         85b7b9d0  b9f70e28  [heap]
+         85b7b9d4  b761c356  /system/lib/libc.so (free+6)
+         85b7b9d8  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         85b7b9dc  8cb84eb8  /system/lib/libwebviewchromium.so
+         85b7b9e0  b9f70e20  [heap]
+         85b7b9e4  8b2d141e  /system/lib/libwebviewchromium.so
+         85b7b9e8  b76e367e  [vdso]
+         85b7b9ec  b76e330c  [vdso]
+         85b7b9f0  85b7ba58  [stack:6136]
+         85b7b9f4  85b7ba18  [stack:6136]
+         85b7b9f8  b76e3820  [vdso]
+         85b7b9fc  021560e0  
+         85b7ba00  00000001  
+         85b7ba04  0653aa7c  
+         85b7ba08  0009171b  
+    #00  85b7ba0c  b9f599f0  [heap]
+         85b7ba10  8ca93a44  /system/lib/libwebviewchromium.so
+         85b7ba14  000003e8  
+         85b7ba18  8cb84eb8  /system/lib/libwebviewchromium.so
+         85b7ba1c  8b2e8c0b  /system/lib/libwebviewchromium.so
+         85b7ba20  00000045  
+         85b7ba24  b9f599f0  [heap]
+         85b7ba28  00000020  
+         85b7ba2c  ffffffff  
+         85b7ba30  8b2e2b1b  /system/lib/libwebviewchromium.so
+         85b7ba34  b76707f6  /system/lib/libc.so (clock_gettime+6)
+         85b7ba38  8cb84eb8  /system/lib/libwebviewchromium.so
+         85b7ba3c  8b2e6be7  /system/lib/libwebviewchromium.so
+         85b7ba40  00000001  
+         85b7ba44  85b7ba58  [stack:6136]
+         85b7ba48  8b2e8bba  /system/lib/libwebviewchromium.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6138, name: ll.clashofclans
+    eax fffffe00  ebx 8597fa78  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 8597fa78  esp 8597f9b4  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         8597f974  00000000  
+         8597f978  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         8597f97c  b76abfcc  /system/lib/libc.so
+         8597f980  ba1c7e18  [heap]
+         8597f984  55105454  
+         8597f988  00000062  
+         8597f98c  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         8597f990  b76b0820  
+         8597f994  8597fc4c  [stack:6138]
+         8597f998  8597fa10  [stack:6138]
+         8597f99c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8597f9a0  8597fa8c  [stack:6138]
+         8597f9a4  ba1c7e38  [heap]
+         8597f9a8  b7ba1990  [heap]
+         8597f9ac  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8597f9b0  00000000  
+    #00  8597f9b4  8597fa74  [stack:6138]
+         8597f9b8  b76abfcc  /system/lib/libc.so
+         8597f9bc  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8597f9c0  8597fa78  [stack:6138]
+         8597f9c4  00000080  
+         8597f9c8  00000000  
+         8597f9cc  00000000  
+         8597f9d0  b9f587f0  [heap]
+         8597f9d4  1545e6c3  
+         8597f9d8  00000000  
+         8597f9dc  8cb84eb8  /system/lib/libwebviewchromium.so
+         8597f9e0  b9f5a018  [heap]
+         8597f9e4  1545e6c3  
+         8597f9e8  00000000  
+         8597f9ec  8b2d1431  /system/lib/libwebviewchromium.so
+         8597f9f0  b9f587f4  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6139, name: ll.clashofclans
+    eax fffffe00  ebx 85881a78  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 85881a78  esp 858819b4  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         85881974  00000000  
+         85881978  00000000  
+         8588197c  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         85881980  00000000  
+         85881984  00000000  
+         85881988  00000000  
+         8588198c  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         85881990  00000000  
+         85881994  00000000  
+         85881998  b9f6a2d0  [heap]
+         8588199c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         858819a0  00000000  
+         858819a4  00000000  
+         858819a8  b7ba1980  [heap]
+         858819ac  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         858819b0  00000000  
+    #00  858819b4  85881a74  [stack:6139]
+         858819b8  b76abfcc  /system/lib/libc.so
+         858819bc  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         858819c0  85881a78  [stack:6139]
+         858819c4  00000080  
+         858819c8  00000000  
+         858819cc  00000000  
+         858819d0  b7bae770  [heap]
+         858819d4  ee142aaa  
+         858819d8  00000000  
+         858819dc  8cb84eb8  /system/lib/libwebviewchromium.so
+         858819e0  b9f5a4a8  [heap]
+         858819e4  ee142aaa  
+         858819e8  00000000  
+         858819ec  8b2d1431  /system/lib/libwebviewchromium.so
+         858819f0  b7bae774  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6140, name: ll.clashofclans
+    eax fffffffc  ebx 0000004a  ecx b9f57d80  edx 00000020
+    esi ffffffff  edi b9f76c20
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d21b  ebp ffffffff  esp 85783a0c  flags 00210286
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+
+stack:
+         857839cc  8b2d1431  /system/lib/libwebviewchromium.so
+         857839d0  b9f58338  [heap]
+         857839d4  00000000  
+         857839d8  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         857839dc  8cb84eb8  /system/lib/libwebviewchromium.so
+         857839e0  b9f58330  [heap]
+         857839e4  8b2d141e  /system/lib/libwebviewchromium.so
+         857839e8  b76e367e  [vdso]
+         857839ec  b76e330c  [vdso]
+         857839f0  85783a58  [stack:6140]
+         857839f4  85783a18  [stack:6140]
+         857839f8  b76e3820  [vdso]
+         857839fc  01c6984c  
+         85783a00  00000001  
+         85783a04  05c4e0cc  
+         85783a08  0001f00d  
+    #00  85783a0c  b9f57d80  [heap]
+         85783a10  8ca93a44  /system/lib/libwebviewchromium.so
+         85783a14  000003e8  
+         85783a18  8cb84eb8  /system/lib/libwebviewchromium.so
+         85783a1c  8b2e8c0b  /system/lib/libwebviewchromium.so
+         85783a20  0000004a  
+         85783a24  b9f57d80  [heap]
+         85783a28  00000020  
+         85783a2c  ffffffff  
+         85783a30  8b2e2b1b  /system/lib/libwebviewchromium.so
+         85783a34  b76707f6  /system/lib/libc.so (clock_gettime+6)
+         85783a38  8cb84eb8  /system/lib/libwebviewchromium.so
+         85783a3c  8b2e6be7  /system/lib/libwebviewchromium.so
+         85783a40  00000001  
+         85783a44  85783a58  [stack:6140]
+         85783a48  8b2e8bba  /system/lib/libwebviewchromium.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6141, name: ll.clashofclans
+    eax fffffffc  ebx 0000004f  ecx b9f56ea0  edx 00000020
+    esi ffffffff  edi b9f58390
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d21b  ebp ffffffff  esp 85685a0c  flags 00210286
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+
+stack:
+         856859cc  8b2d1431  /system/lib/libwebviewchromium.so
+         856859d0  b9f762f8  [heap]
+         856859d4  b761c356  /system/lib/libc.so (free+6)
+         856859d8  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         856859dc  8cb84eb8  /system/lib/libwebviewchromium.so
+         856859e0  b9f762f0  [heap]
+         856859e4  8b2d141e  /system/lib/libwebviewchromium.so
+         856859e8  b76e367e  [vdso]
+         856859ec  b76e330c  [vdso]
+         856859f0  85685a58  [stack:6141]
+         856859f4  85685a18  [stack:6141]
+         856859f8  b76e3820  [vdso]
+         856859fc  0136ef42  
+         85685a00  00000001  
+         85685a04  37ab616c  
+         85685a08  000f15d1  
+    #00  85685a0c  b9f56ea0  [heap]
+         85685a10  8ca93a44  /system/lib/libwebviewchromium.so
+         85685a14  000003e8  
+         85685a18  8cb84eb8  /system/lib/libwebviewchromium.so
+         85685a1c  8b2e8c0b  /system/lib/libwebviewchromium.so
+         85685a20  0000004f  
+         85685a24  b9f56ea0  [heap]
+         85685a28  00000020  
+         85685a2c  ffffffff  
+         85685a30  8b2e2b1b  /system/lib/libwebviewchromium.so
+         85685a34  b76707f6  /system/lib/libc.so (clock_gettime+6)
+         85685a38  8cb84eb8  /system/lib/libwebviewchromium.so
+         85685a3c  8b2e6be7  /system/lib/libwebviewchromium.so
+         85685a40  00000001  
+         85685a44  85685a58  [stack:6141]
+         85685a48  8b2e8bba  /system/lib/libwebviewchromium.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6142, name: ll.clashofclans
+    eax fffffe00  ebx b9f6d278  ecx 00000080  edx fffffffe
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b9f6d278  esp 85587b34  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         85587af4  00000001  
+         85587af8  00000000  
+         85587afc  8b2d7cc1  /system/lib/libwebviewchromium.so
+         85587b00  00000001  
+         85587b04  85587b28  [stack:6142]
+         85587b08  8b2e34ad  /system/lib/libwebviewchromium.so
+         85587b0c  8cb84eb8  /system/lib/libwebviewchromium.so
+         85587b10  8cad69c8  /system/lib/libwebviewchromium.so
+         85587b14  b9f7f010  [heap]
+         85587b18  b9f6d2e0  [heap]
+         85587b1c  8b2c2d08  /system/lib/libwebviewchromium.so
+         85587b20  b9f7f050  [heap]
+         85587b24  00000000  
+         85587b28  00000001  
+         85587b2c  02b781d4  
+         85587b30  8b2c2cd3  /system/lib/libwebviewchromium.so
+    #00  85587b34  b9f6d274  [heap]
+         85587b38  b76abfcc  /system/lib/libc.so
+         85587b3c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         85587b40  b9f6d278  [heap]
+         85587b44  00000080  
+         85587b48  fffffffe  
+         85587b4c  00000000  
+         85587b50  b9f75e50  [heap]
+         85587b54  85587c48  [stack:6142]
+         85587b58  00000000  
+         85587b5c  00000000  
+         85587b60  b9f6d2e0  [heap]
+         85587b64  85587c38  [stack:6142]
+         85587b68  fffffffe  
+         85587b6c  00000001  
+         85587b70  b9f6d274  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6143, name: ll.clashofclans
+    eax fffffe00  ebx 85489ad8  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 85489ad8  esp 85489a14  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         854899d4  00000000  
+         854899d8  00000000  
+         854899dc  00000000  
+         854899e0  00000000  
+         854899e4  00000000  
+         854899e8  00000000  
+         854899ec  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         854899f0  00000000  
+         854899f4  00000000  
+         854899f8  00000000  
+         854899fc  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         85489a00  00000000  
+         85489a04  b9feb1f0  [heap]
+         85489a08  b9feb6a0  [heap]
+         85489a0c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         85489a10  00000000  
+    #00  85489a14  85489ad4  [stack:6143]
+         85489a18  b76abfcc  /system/lib/libc.so
+         85489a1c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         85489a20  85489ad8  [stack:6143]
+         85489a24  00000080  
+         85489a28  00000000  
+         85489a2c  00000000  
+         85489a30  b9f6ef40  [heap]
+         85489a34  ee143f17  
+         85489a38  00000000  
+         85489a3c  8cb84eb8  /system/lib/libwebviewchromium.so
+         85489a40  b9f6ef28  [heap]
+         85489a44  ee143f17  
+         85489a48  00000000  
+         85489a4c  8b2d1431  /system/lib/libwebviewchromium.so
+         85489a50  b9f6ef44  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6144, name: ll.clashofclans
+    eax fffffe00  ebx 8538bad8  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 8538bad8  esp 8538ba14  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         8538b9d4  00000000  
+         8538b9d8  00000000  
+         8538b9dc  00000000  
+         8538b9e0  00000000  
+         8538b9e4  00000000  
+         8538b9e8  00000000  
+         8538b9ec  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         8538b9f0  00000000  
+         8538b9f4  00000000  
+         8538b9f8  00000000  
+         8538b9fc  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8538ba00  00000000  
+         8538ba04  b9feb220  [heap]
+         8538ba08  b9feb5d0  [heap]
+         8538ba0c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8538ba10  00000000  
+    #00  8538ba14  8538bad4  [stack:6144]
+         8538ba18  b76abfcc  /system/lib/libc.so
+         8538ba1c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8538ba20  8538bad8  [stack:6144]
+         8538ba24  00000080  
+         8538ba28  00000000  
+         8538ba2c  00000000  
+         8538ba30  b9f7f100  [heap]
+         8538ba34  ee143921  
+         8538ba38  00000000  
+         8538ba3c  8cb84eb8  /system/lib/libwebviewchromium.so
+         8538ba40  b9f7f0e8  [heap]
+         8538ba44  ee143921  
+         8538ba48  00000000  
+         8538ba4c  8b2d1431  /system/lib/libwebviewchromium.so
+         8538ba50  b9f7f104  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6145, name: ll.clashofclans
+    eax fffffe00  ebx 8528dad8  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp 8528dad8  esp 8528da14  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+
+stack:
+         8528d9d4  00000000  
+         8528d9d8  00000000  
+         8528d9dc  00000000  
+         8528d9e0  00000000  
+         8528d9e4  8b24d20e  /system/lib/libwebviewchromium.so
+         8528d9e8  8cb84eb8  /system/lib/libwebviewchromium.so
+         8528d9ec  b732ee51  /system/lib/libstlport.so (std::__node_alloc::_M_allocate(unsigned int&)+17)
+         8528d9f0  8528da0c  [stack:6145]
+         8528d9f4  00000000  
+         8528d9f8  00000000  
+         8528d9fc  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8528da00  00000000  
+         8528da04  b9f5e550  [heap]
+         8528da08  b7ba19b0  [heap]
+         8528da0c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         8528da10  00000000  
+    #00  8528da14  8528dad4  [stack:6145]
+         8528da18  b76abfcc  /system/lib/libc.so
+         8528da1c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         8528da20  8528dad8  [stack:6145]
+         8528da24  00000080  
+         8528da28  00000000  
+         8528da2c  00000000  
+         8528da30  b9f6d240  [heap]
+         8528da34  ee144129  
+         8528da38  00000000  
+         8528da3c  8cb84eb8  /system/lib/libwebviewchromium.so
+         8528da40  b9f5cca8  [heap]
+         8528da44  ee144129  
+         8528da48  00000000  
+         8528da4c  8b2d1431  /system/lib/libwebviewchromium.so
+         8528da50  b9f6d244  [heap]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6146, name: ll.clashofclans
+    eax fffffffc  ebx 00000057  ecx b9f4c510  edx 00000020
+    esi ffffffff  edi b9f5ff60
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d21b  ebp ffffffff  esp 8518fa6c  flags 00210286
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+
+stack:
+         8518fa2c  8b2d1431  /system/lib/libwebviewchromium.so
+         8518fa30  b9f5ff28  [heap]
+         8518fa34  b761c356  /system/lib/libc.so (free+6)
+         8518fa38  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         8518fa3c  8cb84eb8  /system/lib/libwebviewchromium.so
+         8518fa40  b9f5ff20  [heap]
+         8518fa44  8b2d141e  /system/lib/libwebviewchromium.so
+         8518fa48  b76e367e  [vdso]
+         8518fa4c  b76e330c  [vdso]
+         8518fa50  8518fab8  [stack:6146]
+         8518fa54  8518fa78  [stack:6146]
+         8518fa58  b76e3820  [vdso]
+         8518fa5c  022b30ca  
+         8518fa60  00000001  
+         8518fa64  0653aa7c  
+         8518fa68  0009171b  
+    #00  8518fa6c  b9f4c510  [heap]
+         8518fa70  8ca93a44  /system/lib/libwebviewchromium.so
+         8518fa74  000003e8  
+         8518fa78  8cb84eb8  /system/lib/libwebviewchromium.so
+         8518fa7c  8b2e8c0b  /system/lib/libwebviewchromium.so
+         8518fa80  00000057  
+         8518fa84  b9f4c510  [heap]
+         8518fa88  00000020  
+         8518fa8c  ffffffff  
+         8518fa90  8b2e2b1b  /system/lib/libwebviewchromium.so
+         8518fa94  b76707f6  /system/lib/libc.so (clock_gettime+6)
+         8518fa98  8cb84eb8  /system/lib/libwebviewchromium.so
+         8518fa9c  8b2e6be7  /system/lib/libwebviewchromium.so
+         8518faa0  00000001  
+         8518faa4  8518fab8  [stack:6146]
+         8518faa8  8b2e8bba  /system/lib/libwebviewchromium.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6148, name: CleanupReferenc
+    eax fffffe00  ebx b9f7f9f0  ecx 00000080  edx 00000000
+    esi 00000000  edi 00000001
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d569  ebp b9f7f9f0  esp 84f93984  flags 00210202
+
+backtrace:
+    #00  pc 0003e569  /system/lib/libc.so (__futex_syscall4+25)
+    #01  pc 024199df  [heap]
+
+stack:
+         84f93944  00000000  
+         84f93948  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         84f9394c  b76abfcc  /system/lib/libc.so
+         84f93950  00000033  
+         84f93954  b9f80730  [heap]
+         84f93958  000028a0  
+         84f9395c  b7621eaf  /system/lib/libc.so (dlmalloc+351)
+         84f93960  b76b0820  
+         84f93964  00000000  
+         84f93968  00000000  
+         84f9396c  00000000  
+         84f93970  00000000  
+         84f93974  00000000  
+         84f93978  00000000  
+         84f9397c  00000000  
+         84f93980  00000000  
+    #00  84f93984  b9f7f9e0  [heap]
+         84f93988  b76abfcc  /system/lib/libc.so
+         84f9398c  b761d956  /system/lib/libc.so (pthread_cond_wait+166)
+         84f93990  b9f7f9f0  [heap]
+         84f93994  00000080  
+         84f93998  00000000  
+         84f9399c  00000000  
+         84f939a0  00000000  
+         84f939a4  b764db0d  /system/lib/libc.so (memset+269)
+         84f939a8  00000000  
+         84f939ac  b7622a61  /system/lib/libc.so (dlcalloc+97)
+         84f939b0  00000000  
+         84f939b4  00000000  
+         84f939b8  00000000  
+         84f939bc  b761d199  /system/lib/libc.so (pthread_mutex_trylock+25)
+         84f939c0  b76abfcc  /system/lib/libc.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6149, name: hift.api.runner
+    eax fffffffc  ebx 0000005f  ecx 850918bc  edx 00000010
+    esi ffffffff  edi b9fd8e64
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 0000003b  xss 0000007b
+    eip b764d21b  ebp b9fd8e50  esp 8509184c  flags 00210246
+
+backtrace:
+    #00  pc 0003e21b  /system/lib/libc.so (epoll_wait+27)
+    #01  pc fffffffe  <unknown>
+    #02  pc 02472ebf  [heap]
+    #03  pc 0001e0ff  /system/lib/libutils.so
+    #04  pc 00012e8f  /system/lib/libutils.so
+    #05  pc 00012e9f  /system/lib/libutils.so
+    #06  pc 00012eaf  /system/lib/libutils.so
+    #07  pc 00012ebf  /system/lib/libutils.so
+    #08  pc ffffffff  <unknown>
+    #09  pc 0084708f  /system/usr/icu/icudt51l.dat
+
+stack:
+         8509180c  14005110  /data/app-lib/com.supercell.clashofclans-2/libfmod.so
+         85091810  b9fd86b0  [heap]
+         85091814  850918c0  [stack:6149]
+         85091818  85091a00  [stack:6149]
+         8509181c  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         85091820  b9fd86b0  [heap]
+         85091824  850918d0  [stack:6149]
+         85091828  85091a10  [stack:6149]
+         8509182c  b75e3e74  /system/lib/libutils.so
+         85091830  b9fd8e50  [heap]
+         85091834  b9fd8e64  [heap]
+         85091838  b9fd8e50  [heap]
+         8509183c  b75d5b7f  /system/lib/libutils.so (android::VectorImpl::clear()+31)
+         85091840  b9fd8e98  [heap]
+         85091844  00000000  
+         85091848  00000000  
+    #00  8509184c  ffffffff  
+         ........  ........
+         ........  ........
+    #03  b75e3b50  b75cce90  /system/lib/libutils.so (android::RefBase::onFirstRef())
+    #04  b75e3b54  b75ccea0  /system/lib/libutils.so (android::RefBase::onLastStrongRef(void const*))
+         b75e3b58  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+         b75e3b5c  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+         b75e3b60  00000004  
+         b75e3b64  00000000  
+         b75e3b68  00000000  
+         b75e3b6c  b75d6fe0  /system/lib/libutils.so (android::MessageHandler::~MessageHandler())
+         b75e3b70  b75d7440  /system/lib/libutils.so (android::MessageHandler::~MessageHandler())
+         b75e3b74  b760bb10  /system/lib/libstdc++.so (__cxa_pure_virtual)
+         b75e3b78  00000000  
+         b75e3b7c  00000000  
+         b75e3b80  00000000  
+         b75e3b84  00000000  
+         b75e3b88  fffffffc  
+         b75e3b8c  fffffffc  
+         b75e3b90  00000000  
+         ........  ........
+    #05  b75e3ba4  b75cceb0  /system/lib/libutils.so (android::RefBase::onIncStrongAttempted(unsigned int, void const*))
+    #06  b75e3ba8  b75ccec0  /system/lib/libutils.so (android::RefBase::onLastWeakRef(void const*))
+    #07  b75e3bac  00000000  
+         b75e3bb0  00000000  
+         b75e3bb4  00000000  
+         b75e3bb8  00000000  
+         b75e3bbc  00000000  
+         b75e3bc0  00000004  
+         b75e3bc4  00000000  
+         b75e3bc8  00000000  
+         b75e3bcc  b75d6f90  /system/lib/libutils.so (android::LooperCallback::~LooperCallback())
+         b75e3bd0  b75d74a0  /system/lib/libutils.so (android::LooperCallback::~LooperCallback())
+         b75e3bd4  b760bb10  /system/lib/libstdc++.so (__cxa_pure_virtual)
+         b75e3bd8  00000000  
+         b75e3bdc  00000000  
+         b75e3be0  00000000  
+         b75e3be4  00000000  
+         b75e3be8  fffffffc  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6402, name: Binder_3
+    eax 00000000  ebx 00000021  ecx c0186201  edx 84e95c48
+    esi ba7464f0  edi ba746520
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+    eip b764b726  ebp 84e95c48  esp 84e95bd0  flags 00210286
+
+backtrace:
+    #00  pc 0003c726  /system/lib/libc.so (__ioctl+22)
+    #01  pc 02be054f  [heap]
+
+stack:
+         84e95b90  00000022  
+         84e95b94  84e95bd7  [stack:6402]
+         84e95b98  00000004  
+         84e95b9c  00000000  
+         84e95ba0  000003e8  
+         84e95ba4  0000003c  
+         84e95ba8  00000000  
+         84e95bac  8ffc4260  /dev/binder
+         84e95bb0  8ffc429c  /dev/binder
+         84e95bb4  b7532bcc  /system/lib/libandroid_runtime.so
+         84e95bb8  84e95bdb  [stack:6402]
+         84e95bbc  00000022  
+         84e95bc0  00000000  
+         84e95bc4  00000000  
+         84e95bc8  b757dad9  /system/lib/libbinder.so (android::Parcel::continueWrite(unsigned int)+9)
+         84e95bcc  b759adf8  /system/lib/libbinder.so
+    #00  84e95bd0  ba746550  [heap]
+         84e95bd4  00000000  
+         84e95bd8  b76abfcc  /system/lib/libc.so
+         84e95bdc  b766c3ac  /system/lib/libc.so (ioctl+44)
+         84e95be0  00000021  
+         84e95be4  c0186201  
+         84e95be8  84e95c48  [stack:6402]
+         84e95bec  b759adf8  /system/lib/libbinder.so
+         84e95bf0  ba7464f0  [heap]
+         84e95bf4  b766c386  /system/lib/libc.so (ioctl+6)
+         84e95bf8  b759adf8  /system/lib/libbinder.so
+         84e95bfc  b75743b4  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+404)
+         84e95c00  00000021  
+         84e95c04  c0186201  
+         84e95c08  84e95c48  [stack:6402]
+         84e95c0c  b761b64c  /system/lib/libc.so (pthread_setspecific+172)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 5629, tid: 6706, name: Thread-94
+    eax fffffdfe  ebx 00000040  ecx 87c2bda4  edx 00000000
+    esi 87c2bd24  edi 00000000
+    xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000043  xss 0000007b
+    eip b764b910  ebp 87b2bd04  esp 87b2bcb4  flags 00210286
+
+backtrace:
+    #00  pc 0003c910  /system/lib/libc.so (select+32)
+    #01  pc ffffffff  <unknown>
+    #02  pc 00c08172  <unknown>
+
+stack:
+         87b2bc74  b761cec9  /system/lib/libc.so (pthread_mutex_lock+9)
+         87b2bc78  b76abfcc  /system/lib/libc.so
+         87b2bc7c  ba1fdf98  [heap]
+         87b2bc80  00004004  
+         87b2bc84  00000012  
+         87b2bc88  b7622575  /system/lib/libc.so (dlfree+885)
+         87b2bc8c  b76b0820  
+         87b2bc90  00000028  
+         87b2bc94  b76b0698  
+         87b2bc98  45555404  
+         87b2bc9c  183116a0  
+         87b2bca0  ba1fdfa8  [heap]
+         87b2bca4  8499c000  
+         87b2bca8  b761d099  /system/lib/libc.so (pthread_mutex_unlock+25)
+         87b2bcac  00000000  
+         87b2bcb0  89bce199  /system/lib/lib3btrans.so
+    #00  87b2bcb4  00000000  
+         87b2bcb8  b764b8f0  /system/lib/libc.so (select)
+         87b2bcbc  00000000  
+         87b2bcc0  87c2bda4  
+         87b2bcc4  00000040  
+         87b2bcc8  180174fe  
+         87b2bccc  00000040  
+         87b2bcd0  87c2bda4  
+         87b2bcd4  00000000  
+         87b2bcd8  87c2bd24  
+         87b2bcdc  00000000  
+         87b2bce0  00000001  
+         87b2bce4  87b2bd04  [stack:6706]
+         87b2bce8  18015ebd  
+         87b2bcec  00000000  
+         87b2bcf0  0000003f  
+--------- log /dev/log/system
+07-18 01:08:45.594  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 01:08:50.064  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 21:32:59.282  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 21:36:51.352  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+07-18 21:49:16.962  5629  5677 E ActivityThread: Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+--------- log /dev/log/main
+07-18 01:09:03.274  5629  6128 W System.err: java.lang.NoSuchMethodException: getAdvertisingIdInfo [class android.content.Context]
+07-18 01:09:03.274  5629  6128 W System.err: 	at java.lang.Class.getConstructorOrMethod(Class.java:472)
+07-18 01:09:03.274  5629  6128 W System.err: 	at java.lang.Class.getDeclaredMethod(Class.java:640)
+07-18 01:09:03.274  5629  6128 W System.err: 	at com.mobileapptracker.d.run(Unknown Source)
+07-18 01:09:03.274  5629  6128 W System.err: 	at java.lang.Thread.run(Thread.java:841)
+07-18 01:09:03.284  5629  5629 V WebViewChromium: Binding Chromium to the background looper Looper (main, tid 1) {4e79303c}
+07-18 01:09:03.284  5629  5629 I chromium: [INFO:library_loader_hooks.cc(112)] Chromium logging enabled: level = 0, default verbosity = 0
+07-18 01:09:03.284  5629  5629 I BrowserProcessMain: Initializing chromium process, renderers=0
+07-18 01:09:03.304  5629  6141 W chromium: [WARNING:proxy_service.cc(888)] PAC support disabled because there is no system implementation
+07-18 01:09:03.414  5629  5633 D dalvikvm: GC_CONCURRENT freed 454K, 14% free 3552K/4112K, paused 2ms+0ms, total 7ms
+07-18 01:10:03.464  5629  5633 D dalvikvm: GC_CONCURRENT freed 1043K, 25% free 3402K/4480K, paused 3ms+1ms, total 16ms
+07-18 01:10:03.484  5629  6133 D dalvikvm: GC_FOR_ALLOC freed 908K, 26% free 3358K/4480K, paused 15ms, total 15ms
+07-18 21:32:55.352  5629  5633 D dalvikvm: GC_CONCURRENT freed 840K, 25% free 3394K/4480K, paused 2ms+16ms, total 26ms
+07-18 21:32:55.352  5629  6133 D dalvikvm: WAIT_FOR_CONCURRENT_GC blocked 1ms
+07-18 21:32:55.352  5629  6133 D dalvikvm: GC_FOR_ALLOC freed 891K, 26% free 3341K/4480K, paused 5ms, total 5ms
+07-18 21:32:55.402  5629  6133 D dalvikvm: GC_FOR_ALLOC freed 878K, 26% free 3343K/4480K, paused 48ms, total 48ms
+07-18 21:32:55.442  5629  5633 D dalvikvm: GC_CONCURRENT freed 820K, 26% free 3346K/4480K, paused 2ms+0ms, total 30ms
+07-18 21:32:55.462  5629  6133 D dalvikvm: GC_FOR_ALLOC freed 861K, 26% free 3342K/4480K, paused 11ms, total 11ms
+07-18 21:32:55.682  5629  5629 D dalvikvm: GC_FOR_ALLOC freed 775K, 25% free 3399K/4480K, paused 9ms, total 9ms
+07-18 21:32:55.742  5629  5633 D dalvikvm: GC_CONCURRENT freed 6K, 17% free 3730K/4480K, paused 24ms+4ms, total 56ms
+07-18 21:36:29.892  5629  5633 D dalvikvm: GC_CONCURRENT freed 984K, 22% free 3700K/4716K, paused 3ms+0ms, total 30ms
+07-18 21:36:54.262  5629  5633 D dalvikvm: GC_CONCURRENT freed 1254K, 29% free 3393K/4728K, paused 4ms+1ms, total 18ms
+07-18 21:47:13.762  5629  5633 D dalvikvm: GC_CONCURRENT freed 478K, 21% free 3752K/4724K, paused 2ms+0ms, total 12ms
+07-18 21:49:47.432  5629  5677 E PGA     : PgaSocketRecvPgaIpc: 367: ioctl() failed: ret -1, errno 22
+07-18 21:49:47.432  5629  5677 E PGA     : [5677] Connection closed by host (err = -1), possibly due to exception: App cannot continue with current context. Exiting.
+07-18 21:49:47.432  5629  5677 F libc    : Fatal signal 11 (SIGSEGV) at 0x00000123 (code=1), thread 5677 (Thread-94)
+
